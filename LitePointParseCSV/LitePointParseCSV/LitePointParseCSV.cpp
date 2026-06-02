@@ -1,4 +1,4 @@
-﻿#include "pch.h"
+#include "pch.h"
 #include "LitePointParseCSV.h"
 #include <iostream>
 #include <fstream>
@@ -18,7 +18,7 @@
 
 using namespace std;
 
-// --------------- 内部使用的结构体 ---------------
+// --------------- internal struct ---------------
 struct CalItem {
 	std::string segment;
 	std::string key;
@@ -33,13 +33,13 @@ struct RowEx {
 	std::vector<std::string> cells;
 };
 
-// --------------- 字符串转数字 ---------------
+// --------------- str -> double ---------------
 double toDouble(const std::string& s) {
 	try { return stod(s); }
 	catch (...) { return 0; }
 }
 
-// --------------- 小工具：按表头取列 ---------------
+// --------------- get cell by column name ---------------
 std::string getCell(const std::vector<std::string>& row,
 	const std::vector<std::string>& hdr,
 	const std::string& colName) {
@@ -48,7 +48,7 @@ std::string getCell(const std::vector<std::string>& row,
 	return "";
 }
 
-// --------------- 内部压入结果 ---------------
+// --------------- push item to result ---------------
 void pushItem(std::vector<CalItem>& out,
 	const std::string& seg,
 	const std::string& key,
@@ -59,22 +59,21 @@ void pushItem(std::vector<CalItem>& out,
 	out.push_back({ seg, key, st, val, lo, hi });
 }
 
-// --------------- 错误报告辅助函数 ---------------
+// --------------- error report helper ---------------
 void reportError(ErrorCallback onError, void* userData, int lineNo, const std::string& msg) {
 	if (onError) {
 		onError(lineNo, msg.c_str(), userData);
 	}
 }
 
-// --------------- 内部解析函数（与原代码相同，略作调整）---------------
-// 由于篇幅限制，这里只列出函数声明，具体实现与原代码基本相同
-// 只需将原代码中的解析函数复制过来，并稍作修改
+// --------------- internal parser functions ---------------
+// extract and adapt from original code
 
 bool extractPowerEvmLimitStrings(const std::string& hdr,
 	std::string& pwrMinStr,
 	std::string& evmLimStr)
 {
-	// 两个捕获组都把 +/- 号一起抓出来
+	// capture groups include +/- sign
 	std::regex re(R"(\[>=((?:\+|-)?\d+(?:\.\d+)?)dBm\].*\[<=(\-?\d+(?:\.\d+)?)dB\])",
 		std::regex_constants::icase);
 	/*std::regex re(R"(\[>=([+-]?\d+(?:\.\d+)?)dBm\].*\[<=-([+-]?\d+(?:\.\d+)?)dB\])",
@@ -82,8 +81,8 @@ bool extractPowerEvmLimitStrings(const std::string& hdr,
 	std::smatch m;
 	if (std::regex_search(hdr, m, re))
 	{
-		pwrMinStr = m[1];   // 含符号，例 "23" 或 "-23"
-		evmLimStr = m[2];   // 含符号，例 "-25"
+		pwrMinStr = m[1];   // with sign, e.g. "23" or "-23"
+		evmLimStr = m[2];   // with sign, e.g. "-25"
 		return true;
 	}
 	return false;
@@ -102,8 +101,8 @@ void parseEVMPairs(const std::vector<std::string>& row,
 			continue;
 		}
 
-		double measuredPwr = toDouble(row[i - 2]);   // Power @ EVM 列
-		double maxPwrEvm = toDouble(row[i - 1]);       // Max Power Evm 列  或 UEvm列
+		double measuredPwr = toDouble(row[i - 2]);   // Power @ EVM column
+		double maxPwrEvm = toDouble(row[i - 1]);       // Max Power Evm or UEvm column
 
 		std::string stPwr = (measuredPwr >= toDouble(p)) ? "PASS" : "FAIL";
 		std::string stMax = (maxPwrEvm <= toDouble(e)) ? "PASS" : "FAIL";
@@ -123,7 +122,7 @@ bool extractLimitRange(const std::string& s,
 	std::string& lo,
 	std::string& hi)
 {
-	// 捕获两组带符号数字
+	
 	std::regex re(R"(\(\s*([+-]?\d+(?:\.\d+)?)\s*-\s*([+-]?\d+(?:\.\d+)?)\s*\))");
 	std::smatch m;
 	if (std::regex_match(s, m, re))
@@ -160,7 +159,7 @@ bool parseTxCal(const std::vector<std::string>& hdr,
 		const auto& row = data[r].cells;
 		if (row.empty()) continue;
 
-		/* ---------- 1. 关键列必须存在且非空 ---------- */
+		/* ---------- 1.  ---------- */
 		auto chk = [&](const char* col) -> std::string
 		{
 			std::string v = getCell(row, hdr, col);
@@ -182,15 +181,15 @@ bool parseTxCal(const std::vector<std::string>& hdr,
 			continue;
 		}
 
-		/* ---------- 2. 构造段名 ---------- */
+		/* ---------- 2. build segment name ---------- */
 		std::string seg = segPrefix + "_" + band + "_" + mode + "_ANT" + ant +
 			"_" + bw.substr(0, bw.find("MHz")) + "BW^" + freq + "FREQ^" + mcs;
 
-		/* ---------- 3. Power Limit 范围必须合法 ---------- */
+		/* ---------- 3. Power Limit range must be valid ---------- */
 		std::string powerLo, powerHi;
 		extractLimitRange(plStr, powerLo, powerHi);
 
-		/* ---------- 5. 正常填数据 ---------- */
+		/* ---------- 5. fill data ---------- */
 		pushItem(out, seg, "ClockError", "", toDouble(getCell(row, hdr, "Clock Error")));
 		pushItem(out, seg, "Poweroffset", "", toDouble(getCell(row, hdr, "Power offset")));
 
@@ -200,7 +199,7 @@ bool parseTxCal(const std::vector<std::string>& hdr,
 
 		parseEVMPairs(row, hdr, seg, out);
 
-		/* ---------- 6. 非关键列，缺失不报错 ---------- */
+		/* ---------- 6. non-critical columns, no error ---------- */
 		auto safeDouble = [&](const char* col) { return toDouble(getCell(row, hdr, col)); };
 		pushItem(out, seg, "S2D_GAIN_Reg1", "", safeDouble("S2D GAIN Reg1"));
 		pushItem(out, seg, "S2D_OFFSET_Reg1", "", safeDouble("S2D OFFSET Reg1"));
@@ -245,7 +244,7 @@ void parseXtalCal(const std::vector<std::string>& hdr,
 	for (const auto& row : data) {
 		if (row.cells.empty()) continue;
 		std::string band = getCell(row.cells, hdr, "Band");
-		if (band.empty()) {               // 关键列缺失
+		if (band.empty()) { // required column missing
 			reportError(onError, userData, row.lineNo, "Band empty val");
 			continue;
 		}
@@ -254,29 +253,29 @@ void parseXtalCal(const std::vector<std::string>& hdr,
 		pushItem(out, seg, "OffsetWord", "", toDouble(getCell(row.cells, hdr, "OffsetWord")));
 		pushItem(out, seg, "FreqOffset_PPM", getCell(row.cells, hdr, "Pass/Fail"),
 			toDouble(getCell(row.cells, hdr, "Freq Offset[PPM]")),
-			"", "");   // Limit 列就是规格字符串
+			"", "");   // Limit 
 		pushItem(out, seg, "Temperature", "", toDouble(getCell(row.cells, hdr, "Temperature")));
 	}
 }
 
-// ========================= 动态 LNA Gain =========================
+// =========================  LNA Gain =========================
 void parseLnaGainDynamic(const std::vector<std::string>& hdr,
 	const std::vector<std::string>& row,
 	const std::string& seg,
 	std::vector<CalItem>& out)
 {
-	// 正则：LNA GAIN 数字
+	// LNA GAIN 
 	std::regex lnaRe(R"(LNA GAIN (\d+))", std::regex_constants::icase);
-	// 正则：Pass/Fail\([+-]?\d+\+-\/(\d+)\)  捕获容限
+	// Pass/Fail\([+-]?\d+\+-\/(\d+)\)  
 	std::regex specRe(R"(\(\s*([+-]?\d+)\s*\+\-\s*\/\s*(\d+)\s*\))", std::regex_constants::icase);
 
 	for (size_t i = 0; i < hdr.size(); ++i) {
 		std::smatch m;
 		if (!std::regex_match(hdr[i], m, lnaRe)) continue;
-		int idx = std::stoi(m[1].str());          // Gain 编号
+		int idx = std::stoi(m[1].str());          // Gain 
 
-		double g = toDouble(row[i]);             // 实测值
-		// 找下一列就是对应的 Pass/Fail(xxx+-/n)
+		double g = toDouble(row[i]); // measured value
+		// next column: Pass/Fail(xxx+-/n)
 		std::string specCol = hdr[i] + " Pass/Fail";
 		if (i + 1 >= hdr.size()) continue;
 		std::string specCell = hdr[i + 1];
@@ -292,19 +291,19 @@ void parseLnaGainDynamic(const std::vector<std::string>& hdr,
 	}
 }
 
-// ========================= 动态 Flatness =========================
+// =========================  Flatness =========================
 void parseFlatnessDynamic(const std::vector<std::string>& hdr,
 	const std::vector<std::string>& row,
 	const std::string& seg,
 	std::vector<CalItem>& out,
 	const std::string& prefix)   // "Flatness High Gain " or "Flatness Bypass "
 {
-	// 正则：Flatness Xxxx yyyy
+	// Flatness Xxxx yyyy
 	std::regex flatRe(prefix + R"((\d+))", std::regex_constants::icase);
-	// 门限列名固定为 prefix + "Pass/Fail(±n)"
+	// limit column: prefix + "Pass/Fail(n)"
 	std::string limitCol = prefix + "Pass/Fail";
-	double limit = 3.0;   // 默认
-	// 从表头里找门限值
+	double limit = 3.0; // default
+	
 	for (const auto& h : hdr) {
 		if (h.find(limitCol) == std::string::npos) continue;
 		//Flatness High Gain Pass/Fail(+-4)
@@ -343,10 +342,10 @@ void parseRxCal(const std::vector<std::string>& hdr,
 		}
 		std::string seg = segPrefix + "^" + band + "^ANT" + ant;
 
-		// ---------- 动态 LNA ----------
+		// ----------  LNA ----------
 		parseLnaGainDynamic(hdr, row.cells, seg, out);
 
-		// ---------- 动态 Flatness ----------
+		// ----------  Flatness ----------
 		parseFlatnessDynamic(hdr, row.cells, seg, out, "Flatness High Gain ");
 		parseFlatnessDynamic(hdr, row.cells, seg, out, "Flatness Bypass ");
 
@@ -371,16 +370,16 @@ void pushTxperfCol(const std::vector<std::string>& row, const std::vector<std::s
 	pushItem(out, seg, col_, res, tmpval, lo, hi);
 }
 
-//[3.87 3.85 3.89 3.95 ]解析
+//[3.87 3.85 3.89 3.95 ]
 std::vector<double> parseBracketList(const std::string& src)
 {
 	std::vector<double> vec;
-	// 1. 先摘出方括号内部
+	// 1. 
 	std::regex  bracketRe(R"(\[([^\]]+)\])");
 	std::smatch m;
 	if (!std::regex_search(src, m, bracketRe)) return vec;
 
-	// 2. 连续扫描所有数字（含小数）
+	// 2. 
 	std::regex numRe(R"([-+]?\d+(?:\.\d+)?)");
 	auto begin = std::sregex_iterator(m[1].first, m[1].second, numRe);
 	auto end = std::sregex_iterator();
@@ -407,7 +406,7 @@ void parseTxPerf(const std::vector<std::string>& hdr,
 		std::string spectrum_bw = getCell(row, hdr, "Spectrum BW");
 		std::string mcs = getCell(row, hdr, "Rate");
 		std::string freq = getCell(row, hdr, "Frequency");
-		/* ---------- 1. 关键列必须存在且非空 ---------- */
+		/* ---------- 1.  ---------- */
 		if (band.empty() || mode.empty() || ant.empty() || mcs.empty() || freq.empty() || signal_bw.empty() || spectrum_bw.empty()) {
 			reportError(onError, userData, data[r].lineNo, "Band/Mode/Ant/Rate/Freq empty val");
 			continue;
@@ -554,7 +553,7 @@ void parseRxRecieverDFS(const std::vector<std::string>& hdr,
 }
 
 
-// --------------- 加载整个CSV ---------------
+// --------------- CSV ---------------
 static std::vector<RowEx> LoadWholeCsv(const std::string& filePath, ErrorCallback onError, void* userData) {
 	std::vector<RowEx> ret;
 	csv2::Reader<csv2::delimiter<','>,
@@ -582,7 +581,7 @@ static std::vector<RowEx> LoadWholeCsv(const std::string& filePath, ErrorCallbac
 	return ret;
 }
 
-// --------------- 枚举与工具 ---------------
+// ---------------  ---------------
 enum class TestSection {
 	SECTION_General = 1,
 	SECTION_XTAL_Calibration,
@@ -614,7 +613,7 @@ static TestSection GetSectionRow(const std::vector<std::string>& cells) {
 	return TestSection::SECTION_UNKNOWN;
 }
 
-// --------------- 内部解析主函数 ---------------
+// ---------------  ---------------
 bool ParseLitePointCsvInternal(const std::string& filePath,
 	std::vector<CalItem>& out,
 	ErrorCallback onError,
@@ -661,7 +660,7 @@ bool ParseLitePointCsvInternal(const std::string& filePath,
 	};
 
 	for (const auto& cells : rawData) {
-		// Section行
+		// Section
 		if (cells.cells.size() == 1) {
 			parseCurBlock();
 			tableData.clear();
@@ -670,13 +669,13 @@ bool ParseLitePointCsvInternal(const std::string& filePath,
 			continue;
 		}
 
-		// 表头行
+		
 		if (!cells.cells.empty() && (cells.cells[0] == "Test" || cells.cells[0] == "Serial Number")) {
 			header = cells.cells;
 			continue;
 		}
 
-		// 数据行
+		
 		tableData.push_back(cells);
 	}
 
@@ -684,7 +683,7 @@ bool ParseLitePointCsvInternal(const std::string& filePath,
 	return true;
 }
 
-// --------------- 导出接口实现 ---------------
+// ---------------  ---------------
 int __stdcall ParseLitePointCsv(
 	const char* filePath,
 	CalItem_C** items,
@@ -713,7 +712,7 @@ int __stdcall ParseLitePointCsv(
 		return 0;
 	}
 
-	// 分配内存并复制数据
+	
 	*itemCount = static_cast<int>(internalItems.size());
 	*items = new CalItem_C[*itemCount];
 
@@ -721,7 +720,7 @@ int __stdcall ParseLitePointCsv(
 		const auto& src = internalItems[i];
 		CalItem_C& dst = (*items)[i];
 
-		// 安全复制字符串
+		
 		strncpy_s(dst.segment, sizeof(dst.segment), src.segment.c_str(), _TRUNCATE);
 		strncpy_s(dst.key, sizeof(dst.key), src.key.c_str(), _TRUNCATE);
 		strncpy_s(dst.status, sizeof(dst.status), src.status.empty() ? "PASS" : src.status.c_str(), _TRUNCATE);
@@ -739,12 +738,12 @@ void __stdcall FreeParseResult(CalItem_C* items) {
 	}
 }
 
-// --------------- 文件存在检查 ---------------
+// ---------------  ---------------
 bool fileExist(const std::string& path) {
 	return ::GetFileAttributesA(path.c_str()) != INVALID_FILE_ATTRIBUTES;
 }
 
-// --------------- 线损计算函数 ---------------
+// ---------------  ---------------
 int __stdcall CalculatePathLoss(
 	const char* powerTagCsv,
 	const char* measPowerCsv,
@@ -768,7 +767,7 @@ int __stdcall CalculatePathLoss(
 	}
 
 	try {
-		// 读取CSV文件
+		// CSV
 		auto readCsv = [onError, userData](const std::string& file) -> std::map<int, std::vector<std::string>> {
 			std::map<int, std::vector<std::string>> mp;
 			csv2::Reader<csv2::delimiter<','>, csv2::quote_character<'"'>, csv2::first_row_is_header<false>> reader;
@@ -807,7 +806,7 @@ int __stdcall CalculatePathLoss(
 			return 0;
 		}
 
-		// 计算线损
+		
 		for (const auto& data : B) {
 			auto it = A.find(data.first);
 			if (it == A.end()) {
@@ -835,7 +834,7 @@ int __stdcall CalculatePathLoss(
 	}
 }
 
-// --------------- 提取测量功率 ---------------
+// ---------------  ---------------
 int __stdcall ExtractMeasPowerFromCsv(
 	const char* testCsvPath,
 	const char* outCsvPath,
@@ -859,8 +858,9 @@ int __stdcall ExtractMeasPowerFromCsv(
 			return 0;
 		}
 
-		std::unordered_map<int, std::vector<double>> freqAntLoss;
+		std::unordered_map<int, std::vector<double>> freqAntData;
 		bool inTxPerf = false;
+		bool inRxDFS = false;
 		std::vector<std::string> hdr;
 
 		for (size_t r = 0; r < rawData.size(); ++r) {
@@ -869,36 +869,55 @@ int __stdcall ExtractMeasPowerFromCsv(
 
 			if (row.size() == 1) {
 				inTxPerf = (row[0].find("Tx Performance") != std::string::npos);
+				inRxDFS  = (row[0].find("Rx Reciever DFS") != std::string::npos);
 				continue;
 			}
 
-			if (!inTxPerf) continue;
+			if (!inTxPerf && !inRxDFS) continue;
 
 			if (row[0] == "Test") {
 				hdr = row;
 				continue;
 			}
 
-			try {
-				int freq = std::stoi(getCell(row, hdr, "Frequency"));
-				int ant = std::stoi(getCell(row, hdr, "Ant"));
-				double power = std::stod(getCell(row, hdr, "Power"));
+			// Tx Performance:  PowerRx Reciever DFS:  RSSI
+			if (inTxPerf) {
+				try {
+					int freq = std::stoi(getCell(row, hdr, "Frequency"));
+					int ant = std::stoi(getCell(row, hdr, "Ant"));
+					double power = std::stod(getCell(row, hdr, "Power"));
 
-				auto& vec = freqAntLoss[freq];
-				if (vec.size() < 5) vec.resize(5, 0.0);
-				if (ant >= 0 && ant < 5) vec[ant] = power;
-				
-				bflag = true;
+					auto& vec = freqAntData[freq];
+					if (vec.size() < 5) vec.resize(5, 0.0);
+					if (ant >= 0 && ant < 5) vec[ant] = power;
+
+					bflag = true;
+				}
+				catch (...) {
+				}
 			}
-			catch (...) {
-				// 忽略转换错误
+
+			if (inRxDFS) {
+				try {
+					int freq = std::stoi(getCell(row, hdr, "Frequency"));
+					int ant = std::stoi(getCell(row, hdr, "Ant"));
+					double rssi = std::stod(getCell(row, hdr, "RSSI"));
+
+					auto& vec = freqAntData[freq];
+					if (vec.size() < 5) vec.resize(5, 0.0);
+					if (ant >= 0 && ant < 5) vec[ant] = rssi;
+
+					bflag = true;
+				}
+				catch (...) {
+				}
 			}
 		}
 
-		// 排序并输出
+		
 		std::vector<int> freqs;
-		freqs.reserve(freqAntLoss.size());
-		for (auto& data : freqAntLoss) freqs.push_back(data.first);
+		freqs.reserve(freqAntData.size());
+		for (auto& p : freqAntData) freqs.push_back(p.first);
 		std::sort(freqs.begin(), freqs.end());
 
 		std::ofstream ofs(outCsvPath);
@@ -906,9 +925,10 @@ int __stdcall ExtractMeasPowerFromCsv(
 			reportError(onError, userData, 0, std::string("Cannot create file: ") + outCsvPath);
 			return 0;
 		}
+		ofs << std::fixed << std::setprecision(2);
 
 		for (int f : freqs) {
-			const auto& v = freqAntLoss[f];
+			const auto& v = freqAntData[f];
 			ofs << f;
 			for (size_t i = 0; i < 5; ++i) {
 				ofs << ',' << v[i];
@@ -932,19 +952,19 @@ int __stdcall ExtractMeasPowerFromCsv(
 }
 
 // ------------------------------------------------------------------
-// 多文件功率平均值计算
+
 int __stdcall CalcAvgPowerFromSet(
-	const char* const* filePathSet,   // 以 nullptr 结尾的路径数组
-	const char* outAvgCsvPath,       // 输出平均值 CSV 路径
-	ErrorCallback onError,            // 错误回调
-	void* userData)           // 回调用户数据
+	const char* const* filePathSet,   // nullptr terminated 
+	const char* outAvgCsvPath,       // output CSV path 
+	ErrorCallback onError,            
+	void* userData)           
 {
 	if (!filePathSet || !outAvgCsvPath) {
 		reportError(onError, userData, 0, "Invalid parameters");
 		return 0;
 	}
 
-	// 1. 收集所有文件路径
+	// 1. 
 	std::vector<std::string> files;
 	for (const char* const* p = filePathSet; *p; ++p) {
 		if (!fileExist(*p)) {
@@ -958,9 +978,9 @@ int __stdcall CalcAvgPowerFromSet(
 		return 0;
 	}
 
-	// 2. 按“列”分别累加功率、计数（支持 1 频率 + N 端口）
-	std::map<int, std::vector<double>> sumMap;   // 频率 -> 各列功率和 vector
-	std::map<int, int> cntMap;                   // 频率 -> 文件出现次数
+	// 2.  1  + N 
+	std::map<int, std::vector<double>> sumMap;   // freq -> column power sum vector
+	std::map<int, int> cntMap;                   // freq -> file occurrence count 
 
 	for (const auto& file : files) {
 		auto rows = LoadWholeCsv(file, onError, userData);
@@ -970,22 +990,22 @@ int __stdcall CalcAvgPowerFromSet(
 			if (row.cells.size() < 2) continue;
 			try {
 				int freq = std::stoi(row.cells[0]);
-				int ports = static_cast<int>(row.cells.size()) - 1; // 功率列数
+				int ports = static_cast<int>(row.cells.size()) - 1; // power column count
 
-				// 初始化 vector（首次遇到该频率）
+				// init vector (first occurrence)
 				if (sumMap.find(freq) == sumMap.end()) {
 					sumMap[freq].resize(ports, 0.0);
 					cntMap[freq] = 0;
 				}
 
-				// 逐列累加
+				
 				for (int col = 0; col < ports; ++col) {
 					sumMap[freq][col] += std::stod(row.cells[col + 1]);
 				}
-				cntMap[freq] += 1;   // 本频率在本文件出现一次
+				cntMap[freq] += 1; // this freq appears once
 			}
 			catch (...) {
-				// 忽略本行
+				
 			}
 		}
 	}
@@ -1003,7 +1023,7 @@ int __stdcall CalcAvgPowerFromSet(
 		int fileCnt = cntMap[freq];
 		ofs << freq;
 		for (double s : colSum) {
-			ofs << ',' << (s / fileCnt);   // 各列分别平均
+			ofs << ',' << (s / fileCnt);   
 		}
 		ofs << '\n';
 	}

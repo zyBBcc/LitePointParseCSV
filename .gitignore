@@ -1,0 +1,25 @@
+# Visual Studio build artifacts
+*.tlog
+*.obj
+*.pch
+*.pdb
+*.idb
+*.ilk
+*.lib
+*.exe
+*.suo
+*.user
+*.db
+*.db-shm
+*.db-wal
+*.ipch
+*.log
+*.CppClean.log
+*.lastbuildstate
+Debug/
+Release/
+bulid/
+.vs/
+
+# Test output
+CSV/_test_*.csv

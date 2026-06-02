@@ -1,0 +1,348 @@
+General
+Serial Number,IQDVT Version,CV VERSION,DUT VERSION,Date,Time
+,1.8.7.2,wlan_7.2.300@r1044+a+233+a+23-e90bc1,2.27.1_r1044+a+233+a+23-e90bc1,2026/1/19,16:31
+XTAL Calibration
+Test,Band,OffsetWord,Freq Offset[PPM],Limit,Temperature,Pass/Fail
+1,2G,46,0.07, ,47,Pass
+TX Calibration 24GHz
+Test,Band,Tx Mode,Ant,Rate,BW,Frequency,Clock Error,Power offset,Measure Power,Power Limit,Power Pass/Fail,Power @ EVM -25dB,Max Power Evm,Power & EVM Limit [>=23dBm] [<=-25dB],Power @ EVM -35dB,UEvm, Power & EVM Limit [>=20dBm] [<=-35dB],S2D GAIN Reg1,S2D OFFSET Reg1,COEFF A Reg1,COEFF B Reg1,Error Reg1,Error Limit Reg1 [<1],Temp,Pass/Fail
+2.1,2G,802.11n,0,MCS7,20MHz,2412,0.06,32,17.65,(17.00 - 18.00),Pass,26.68,-25.12,Pass,23.74,-39.08,Pass,3,39,493,202,0.39,Pass,46,Pass
+2.1,2G,802.11n,1,MCS7,20MHz,2412,0.10,33,17.64,(17.00 - 18.00),Pass,26.68,-26.11,Pass,23.75,-39.23,Pass,3,37,517,-243,0.48,Pass,46,Pass
+2.1,2G,802.11n,2,MCS7,20MHz,2412,0.10,32,17.27,(17.00 - 18.00),Pass,26.25,-27.29,Pass,24.29,-36.63,Pass,3,39,505,-59,0.29,Pass,46,Pass
+2.1,2G,802.11n,3,MCS7,20MHz,2412,0.14,33,17.34,(17.00 - 18.00),Pass,26.24,-27.77,Pass,24.28,-36.77,Pass,3,39,503,-28,0.35,Pass,46,Pass
+2.2,2G,802.11n,0,MCS7,20MHz,2462,0.17,31,17.52,(17.00 - 18.00),Pass,26.56,-25.71,Pass,23.61,-40.37,Pass,3,39,494,156,0.42,Pass,46,Pass
+2.2,2G,802.11n,1,MCS7,20MHz,2462,0.19,32,17.35,(17.00 - 18.00),Pass,26.43,-27.54,Pass,24.46,-36.41,Pass,3,37,519,-306,0.44,Pass,46,Pass
+2.2,2G,802.11n,2,MCS7,20MHz,2462,0.15,32,17.45,(17.00 - 18.00),Pass,26.49,-26.47,Pass,24.52,-36.07,Pass,3,40,505,120,0.26,Pass,46,Pass
+2.2,2G,802.11n,3,MCS7,20MHz,2462,0.24,33,17.46,(17.00 - 18.00),Pass,26.46,-27.04,Pass,24.51,-35.22,Pass,3,39,504,-65,0.37,Pass,46,Pass
+TX Calibration 24GHz
+Test,Band,Tx Mode,Ant,Rate,BW,Frequency,Clock Error,Power offset,Measure Power,Power Limit,Power Pass/Fail,Power @ EVM -25dB,Max Power Evm,Power & EVM Limit [>=23dBm] [<=-25dB],Power @ EVM -36dB,UEvm, Power & EVM Limit [>=20dBm] [<=-36dB],S2D GAIN Reg1,S2D OFFSET Reg1,COEFF A Reg1,COEFF B Reg1,Error Reg1,Error Limit Reg1 [<1],Temp,Pass/Fail
+3.1,2G,802.11n,0,MCS7,40MHz,2422,0.29,31,17.34,(17.00 - 18.00),Pass,27.34,-27.87,Pass,25.52,-37.01,Pass,3,38,506,-68,0.43,Pass,46,Pass
+3.1,2G,802.11n,1,MCS7,40MHz,2422,0.30,32,17.37,(17.00 - 18.00),Pass,27.35,-27.20,Pass,25.51,-36.72,Pass,3,36,533,-556,0.31,Pass,47,Pass
+3.1,2G,802.11n,2,MCS7,40MHz,2422,0.29,32,17.45,(17.00 - 18.00),Pass,27.33,-26.94,Pass,25.51,-36.41,Pass,3,38,516,-289,0.18,Pass,47,Pass
+3.1,2G,802.11n,3,MCS7,40MHz,2422,0.31,33,17.45,(17.00 - 18.00),Pass,28.07,-25.49,Pass,25.43,-37.18,Pass,3,38,516,-271,0.23,Pass,47,Pass
+TX Calibration 24GHz
+Test,Band,Tx Mode,Ant,Rate,BW,Frequency,Clock Error,Power offset,Measure Power,Power Limit,Power Pass/Fail,Power @ EVM -25dB,Max Power Evm,Power & EVM Limit [>=20dBm] [<=-25dB],Power @ EVM -30dB,UEvm, Power & EVM Limit [>=0dBm] [<=-30dB],S2D GAIN Reg1,S2D OFFSET Reg1,COEFF A Reg1,COEFF B Reg1,Error Reg1,Error Limit Reg1 [<1],Temp,Pass/Fail
+4.1,2G,802.11b,0,CCK 11M,20MHZ,2412,0.26,33,17.43,(17.00 - 18.00),Pass,28.96,-29.74,Pass,27.84,-30.85,Pass,3,38,527,-58,0.75,Pass,46,Pass
+4.1,2G,802.11b,1,CCK 11M,20MHZ,2412,0.27,34,17.46,(17.00 - 18.00),Pass,28.97,-29.30,Pass,27.84,-30.05,Pass,3,36,552,-587,0.70,Pass,47,Pass
+4.1,2G,802.11b,2,CCK 11M,20MHZ,2412,0.27,34,17.47,(17.00 - 18.00),Pass,28.99,-29.79,Pass,27.86,-30.83,Pass,3,38,539,-278,0.63,Pass,47,Pass
+4.1,2G,802.11b,3,CCK 11M,20MHZ,2412,0.26,35,17.56,(17.00 - 18.00),Pass,29.04,-29.63,Pass,27.94,-30.58,Pass,3,39,539,-15,0.74,Pass,47,Pass
+4.2,2G,802.11b,0,CCK 11M,20MHZ,2462,0.26,33,17.66,(17.00 - 18.00),Pass,29.27,-28.76,Pass,28.15,-30.15,Pass,3,38,529,-110,0.68,Pass,47,Pass
+4.2,2G,802.11b,1,CCK 11M,20MHZ,2462,0.25,34,17.56,(17.00 - 18.00),Pass,29.21,-28.69,Pass,26.90,-30.13,Pass,3,37,551,-352,0.77,Pass,47,Pass
+4.2,2G,802.11b,2,CCK 11M,20MHZ,2462,0.22,34,17.64,(17.00 - 18.00),Pass,29.26,-28.92,Pass,28.14,-30.26,Pass,3,39,539,-39,0.67,Pass,47,Pass
+4.2,2G,802.11b,3,CCK 11M,20MHZ,2462,0.21,35,17.65,(17.00 - 18.00),Pass,29.30,-28.86,Pass,27.03,-30.76,Pass,3,38,539,-283,0.71,Pass,47,Pass
+RX Calibration 24GHz
+Test,Band,Ant,Crossing Point 2 [MHz],Crossing Point 1 [MHz],Crossing Point 3 [MHz],LNA GAIN 0,Pass/Fail(35+-/4),LNA GAIN 1,Pass/Fail(31+-/4),LNA GAIN 2,Pass/Fail(28+-/4),LNA GAIN 3,Pass/Fail(24+-/4),LNA GAIN 4,Pass/Fail(21+-/4),LNA GAIN 5,Pass/Fail(18+-/4),LNA GAIN 6,Pass/Fail(15+-/4),LNA GAIN 7,Pass/Fail(12+-/4),LNA GAIN 8,Pass/Fail(9+-/4),LNA GAIN 9,Pass/Fail(6+-/4),LNA GAIN 10,Pass/Fail(2+-/4),LNA GAIN 11,Pass/Fail(0+-/4),LNA GAIN 12,Pass/Fail(-3+-/4),LNA GAIN 13,Pass/Fail(-7+-/4),Temp,Pass/Fail
+5,2G,0,,,,35.25,Pass,32.19,Pass,28.63,Pass,25.47,Pass,21.91,Pass,18.53,Pass,15.44,Pass,13.56,Pass,10.27,Pass,6.61,Pass,3.43,Pass,0.05,Pass,-3.32,Pass,-6.42,Pass,48,Pass
+5,2G,1,,,,35.96,Pass,32.81,Pass,29.34,Pass,26.09,Pass,22.52,Pass,19.34,Pass,16.15,Pass,14.09,Pass,10.79,Pass,7.23,Pass,4.04,Pass,0.76,Pass,-2.61,Pass,-5.71,Pass,48,Pass
+5,2G,2,,,,34.71,Pass,31.55,Pass,27.99,Pass,24.65,Pass,21.27,Pass,17.90,Pass,14.71,Pass,12.93,Pass,9.54,Pass,5.98,Pass,2.60,Pass,-0.49,Pass,-3.87,Pass,-7.05,Pass,48,Pass
+5,2G,3,,,,34.03,Pass,30.69,Pass,27.13,Pass,23.88,Pass,20.69,Pass,17.31,Pass,14.13,Pass,12.91,Pass,9.99,Pass,6.52,Pass,3.43,Pass,0.33,Pass,-3.04,Pass,-6.14,Pass,48,Pass
+TX Calibration 5GHz
+Test,Band,Tx Mode,Ant,Rate,BW,Frequency,Clock Error,Power offset,Measure Power,Power Limit,Power Pass/Fail,Power @ EVM -25dB,Max Power Evm,Power & EVM Limit [>=19dBm] [<=-25dB],Power @ EVM -36dB,UEvm, Power & EVM Limit [>=16dBm] [<=-36dB],S2D GAIN Reg1,S2D OFFSET Reg1,COEFF A Reg1,COEFF B Reg1,Error Reg1,Error Limit Reg1 [<1],Temp,Pass/Fail
+7.1,5G,802.11ax,0,MCS7,20MHz,5180,-0.04,36,17.59,(17.00 - 18.00),Pass,21.02,-28.13,Pass,19.02,-36.63,Pass,4,43,363,1294,0.27,Pass,48,Pass
+7.1,5G,802.11ax,1,MCS7,20MHz,5180,-0.04,35,17.57,(17.00 - 18.00),Pass,20.96,-27.51,Pass,18.98,-37.02,Pass,3,43,454,-544,0.41,Pass,48,Pass
+7.1,5G,802.11ax,2,MCS7,20MHz,5180,-0.04,35,17.39,(17.00 - 18.00),Pass,21.74,-25.64,Pass,18.79,-38.14,Pass,4,42,368,996,0.47,Pass,48,Pass
+7.1,5G,802.11ax,3,MCS7,20MHz,5180,-0.03,34,17.31,(17.00 - 18.00),Pass,21.71,-25.37,Pass,18.76,-38.84,Pass,4,43,364,1070,0.37,Pass,48,Pass
+7.2,5G,802.11ax,0,MCS7,20MHz,5320,0.03,34,17.69,(17.00 - 18.00),Pass,23.15,-25.18,Pass,20.19,-38.43,Pass,4,41,365,1297,0.26,Pass,48,Pass
+7.2,5G,802.11ax,1,MCS7,20MHz,5320,0.03,33,17.43,(17.00 - 18.00),Pass,22.90,-26.97,Pass,20.92,-37.14,Pass,3,42,460,-365,0.40,Pass,49,Pass
+7.2,5G,802.11ax,2,MCS7,20MHz,5320,0.02,33,17.37,(17.00 - 18.00),Pass,22.78,-26.51,Pass,20.82,-36.55,Pass,4,41,371,1192,0.44,Pass,48,Pass
+7.2,5G,802.11ax,3,MCS7,20MHz,5320,0.03,32,17.30,(17.00 - 18.00),Pass,22.72,-26.09,Pass,20.78,-36.56,Pass,4,41,366,1089,0.29,Pass,48,Pass
+7.3,5G,802.11ax,0,MCS7,20MHz,5500,-0.00,34,17.53,(17.00 - 18.00),Pass,20.99,-28.37,Pass,19.02,-38.94,Pass,4,43,362,1368,0.38,Pass,49,Pass
+7.3,5G,802.11ax,1,MCS7,20MHz,5500,-0.03,35,17.66,(17.00 - 18.00),Pass,21.03,-26.67,Pass,19.09,-36.73,Pass,4,45,340,1863,0.44,Pass,49,Pass
+7.3,5G,802.11ax,2,MCS7,20MHz,5500,-0.04,35,17.70,(17.00 - 18.00),Pass,21.11,-27.22,Pass,18.15,-39.81,Pass,4,43,365,1422,0.41,Pass,49,Pass
+7.3,5G,802.11ax,3,MCS7,20MHz,5500,-0.05,34,17.66,(17.00 - 18.00),Pass,21.12,-28.22,Pass,19.16,-38.86,Pass,4,43,361,1271,0.41,Pass,49,Pass
+7.4,5G,802.11ax,0,MCS7,20MHz,5600,-0.07,33,17.59,(17.00 - 18.00),Pass,23.19,-27.58,Pass,21.15,-36.15,Pass,4,42,366,1294,0.20,Pass,49,Pass
+7.4,5G,802.11ax,1,MCS7,20MHz,5600,-0.07,34,17.53,(17.00 - 18.00),Pass,23.11,-27.29,Pass,20.02,-36.99,Pass,3,45,458,191,0.28,Pass,49,Pass
+7.4,5G,802.11ax,2,MCS7,20MHz,5600,-0.11,34,17.57,(17.00 - 18.00),Pass,23.11,-27.30,Pass,19.03,-38.19,Pass,4,42,370,1302,0.31,Pass,49,Pass
+7.4,5G,802.11ax,3,MCS7,20MHz,5600,-0.11,33,17.59,(17.00 - 18.00),Pass,23.17,-26.72,Pass,20.13,-38.31,Pass,4,43,365,1359,0.30,Pass,49,Pass
+7.5,5G,802.11ax,0,MCS7,20MHz,5700,-0.15,33,17.70,(17.00 - 18.00),Pass,22.29,-28.78,Pass,20.27,-39.07,Pass,3,42,482,-761,0.27,Pass,49,Pass
+7.5,5G,802.11ax,1,MCS7,20MHz,5700,-0.16,32,17.43,(17.00 - 18.00),Pass,21.94,-28.91,Pass,19.94,-40.74,Pass,3,44,458,-227,0.47,Pass,49,Pass
+7.5,5G,802.11ax,2,MCS7,20MHz,5700,-0.16,32,17.25,(17.00 - 18.00),Pass,22.80,-27.70,Pass,20.80,-38.07,Pass,3,41,491,-1129,0.42,Pass,49,Pass
+7.5,5G,802.11ax,3,MCS7,20MHz,5700,-0.16,31,17.39,(17.00 - 18.00),Pass,21.89,-27.14,Pass,19.91,-38.56,Pass,3,42,483,-879,0.41,Pass,49,Pass
+7.6,5G,802.11ax,0,MCS7,20MHz,5805,-0.19,35,17.26,(17.00 - 18.00),Pass,21.84,-26.64,Pass,18.77,-37.31,Pass,4,44,363,1042,0.30,Pass,49,Pass
+7.6,5G,802.11ax,1,MCS7,20MHz,5805,-0.22,35,17.40,(17.00 - 18.00),Pass,21.93,-25.86,Pass,18.88,-36.87,Pass,3,46,454,-332,0.43,Pass,50,Pass
+7.6,5G,802.11ax,2,MCS7,20MHz,5805,-0.21,35,17.37,(17.00 - 18.00),Pass,21.94,-26.42,Pass,18.88,-36.88,Pass,3,43,485,-1067,0.49,Pass,49,Pass
+7.6,5G,802.11ax,3,MCS7,20MHz,5805,-0.23,34,17.52,(17.00 - 18.00),Pass,22.06,-25.80,Pass,19.06,-38.96,Pass,3,46,480,-485,0.39,Pass,49,Pass
+TX Calibration 5GHz
+Test,Band,Tx Mode,Ant,Rate,BW,Frequency,Clock Error,Power offset,Measure Power,Power Limit,Power Pass/Fail,Power @ EVM -25dB,Max Power Evm,Power & EVM Limit [>=19dBm] [<=-25dB],Power @ EVM -36dB,UEvm, Power & EVM Limit [>=16dBm] [<=-36dB],S2D GAIN Reg1,S2D OFFSET Reg1,COEFF A Reg1,COEFF B Reg1,Error Reg1,Error Limit Reg1 [<1],Temp,Pass/Fail
+8.1,5G,802.11ax,0,MCS7,40MHz,5190,-0.25,35,17.28,(17.00 - 18.00),Pass,21.69,-27.94,Pass,19.75,-36.27,Pass,4,41,367,963,0.21,Pass,49,Pass
+8.1,5G,802.11ax,1,MCS7,40MHz,5190,-0.26,35,17.69,(17.00 - 18.00),Pass,22.03,-25.16,Pass,19.14,-38.40,Pass,3,43,458,-395,0.33,Pass,50,Pass
+8.1,5G,802.11ax,2,MCS7,40MHz,5190,-0.27,35,17.51,(17.00 - 18.00),Pass,21.88,-26.46,Pass,18.97,-38.16,Pass,4,41,370,879,0.34,Pass,49,Pass
+8.1,5G,802.11ax,3,MCS7,40MHz,5190,-0.28,34,17.47,(17.00 - 18.00),Pass,21.88,-27.29,Pass,19.96,-36.35,Pass,4,42,367,993,0.27,Pass,49,Pass
+8.2,5G,802.11ax,0,MCS7,40MHz,5510,-0.29,34,17.38,(17.00 - 18.00),Pass,21.79,-26.05,Pass,19.90,-36.32,Pass,4,42,365,1093,0.24,Pass,49,Pass
+8.2,5G,802.11ax,1,MCS7,40MHz,5510,-0.31,35,17.46,(17.00 - 18.00),Pass,20.88,-26.97,Pass,18.93,-36.45,Pass,4,43,343,1382,0.34,Pass,50,Pass
+8.2,5G,802.11ax,2,MCS7,40MHz,5510,-0.32,35,17.55,(17.00 - 18.00),Pass,20.99,-28.29,Pass,19.04,-36.89,Pass,4,42,368,1141,0.31,Pass,50,Pass
+8.2,5G,802.11ax,3,MCS7,40MHz,5510,-0.33,34,17.53,(17.00 - 18.00),Pass,20.99,-28.83,Pass,19.07,-39.13,Pass,4,43,365,1236,0.30,Pass,49,Pass
+8.3,5G,802.11ax,0,MCS7,40MHz,5670,-0.34,33,17.68,(17.00 - 18.00),Pass,23.23,-26.80,Pass,21.30,-36.55,Pass,4,42,367,1184,0.21,Pass,50,Pass
+8.3,5G,802.11ax,1,MCS7,40MHz,5670,-0.35,32,17.39,(17.00 - 18.00),Pass,22.87,-27.47,Pass,20.93,-37.62,Pass,3,43,462,-419,0.50,Pass,50,Pass
+8.3,5G,802.11ax,2,MCS7,40MHz,5670,-0.37,33,17.69,(17.00 - 18.00),Pass,23.23,-26.84,Pass,20.26,-38.31,Pass,4,43,371,1394,0.39,Pass,50,Pass
+8.3,5G,802.11ax,3,MCS7,40MHz,5670,-0.38,31,17.50,(17.00 - 18.00),Pass,21.99,-28.42,Pass,20.06,-39.51,Pass,3,41,486,-1089,0.33,Pass,49,Pass
+8.4,5G,802.11ax,0,MCS7,40MHz,5795,-0.38,35,17.48,(17.00 - 18.00),Pass,21.99,-25.57,Pass,19.04,-37.90,Pass,4,44,365,1232,0.19,Pass,50,Pass
+8.4,5G,802.11ax,1,MCS7,40MHz,5795,-0.40,35,17.57,(17.00 - 18.00),Pass,22.05,-25.06,Pass,19.11,-37.01,Pass,3,45,457,-353,0.32,Pass,50,Pass
+8.4,5G,802.11ax,2,MCS7,40MHz,5795,-0.40,35,17.58,(17.00 - 18.00),Pass,22.02,-26.33,Pass,20.11,-36.13,Pass,4,44,367,1266,0.34,Pass,50,Pass
+8.4,5G,802.11ax,3,MCS7,40MHz,5795,-0.42,34,17.69,(17.00 - 18.00),Pass,22.17,-25.64,Pass,19.28,-39.77,Pass,4,44,364,1093,0.27,Pass,50,Pass
+TX Calibration 5GHz
+Test,Band,Tx Mode,Ant,Rate,BW,Frequency,Clock Error,Power offset,Measure Power,Power Limit,Power Pass/Fail,Power @ EVM -25dB,Max Power Evm,Power & EVM Limit [>=19dBm] [<=-25dB],Power @ EVM -36dB,UEvm, Power & EVM Limit [>=16dBm] [<=-36dB],S2D GAIN Reg1,S2D OFFSET Reg1,COEFF A Reg1,COEFF B Reg1,Error Reg1,Error Limit Reg1 [<1],Temp,Pass/Fail
+9.1,5G,802.11ax,0,MCS7,80MHz,5210,-0.43,35,17.56,(17.00 - 18.00),Pass,23.08,-25.96,Pass,20.10,-37.44,Pass,4,41,368,1120,0.21,Pass,50,Pass
+9.1,5G,802.11ax,1,MCS7,80MHz,5210,-0.45,34,17.39,(17.00 - 18.00),Pass,22.89,-25.92,Pass,19.91,-38.15,Pass,3,43,462,-314,0.36,Pass,50,Pass
+9.1,5G,802.11ax,2,MCS7,80MHz,5210,-0.46,35,17.71,(17.00 - 18.00),Pass,23.18,-25.46,Pass,20.24,-37.22,Pass,4,42,372,1277,0.42,Pass,50,Pass
+9.1,5G,802.11ax,3,MCS7,80MHz,5210,-0.48,34,17.68,(17.00 - 18.00),Pass,23.11,-25.77,Pass,20.20,-38.89,Pass,4,42,367,1142,0.27,Pass,50,Pass
+9.2,5G,802.11ax,0,MCS7,80MHz,5530,-0.47,34,17.52,(17.00 - 18.00),Pass,22.06,-27.64,Pass,20.08,-37.43,Pass,4,42,366,1167,0.29,Pass,50,Pass
+9.2,5G,802.11ax,1,MCS7,80MHz,5530,-0.50,35,17.56,(17.00 - 18.00),Pass,22.01,-26.65,Pass,20.05,-36.84,Pass,3,43,458,-365,0.35,Pass,50,Pass
+9.2,5G,802.11ax,2,MCS7,80MHz,5530,-0.51,35,17.62,(17.00 - 18.00),Pass,22.10,-27.54,Pass,20.14,-36.04,Pass,4,41,370,945,0.41,Pass,50,Pass
+9.2,5G,802.11ax,3,MCS7,80MHz,5530,-0.52,34,17.67,(17.00 - 18.00),Pass,22.15,-27.09,Pass,20.22,-37.11,Pass,4,43,365,1293,0.32,Pass,50,Pass
+9.3,5G,802.11ax,0,MCS7,80MHz,5610,-0.53,33,17.27,(17.00 - 18.00),Pass,22.87,-29.10,Pass,20.87,-39.45,Pass,4,42,368,1217,0.23,Pass,50,Pass
+9.3,5G,802.11ax,1,MCS7,80MHz,5610,-0.54,35,17.71,(17.00 - 18.00),Pass,23.29,-26.48,Pass,20.26,-38.61,Pass,3,43,460,-330,0.29,Pass,51,Pass
+9.3,5G,802.11ax,2,MCS7,80MHz,5610,-0.56,34,17.28,(17.00 - 18.00),Pass,22.89,-29.21,Pass,20.87,-36.51,Pass,4,41,372,981,0.32,Pass,50,Pass
+9.3,5G,802.11ax,3,MCS7,80MHz,5610,-0.57,33,17.32,(17.00 - 18.00),Pass,22.87,-27.29,Pass,20.92,-37.41,Pass,4,42,367,1061,0.23,Pass,50,Pass
+9.4,5G,802.11ax,0,MCS7,80MHz,5775,-0.57,35,17.51,(17.00 - 18.00),Pass,22.01,-25.35,Pass,19.07,-40.63,Pass,4,43,363,1052,0.30,Pass,50,Pass
+9.4,5G,802.11ax,1,MCS7,80MHz,5775,-0.58,35,17.67,(17.00 - 18.00),Pass,21.18,-27.95,Pass,19.20,-38.39,Pass,3,45,454,-262,0.48,Pass,51,Pass
+9.4,5G,802.11ax,2,MCS7,80MHz,5775,-0.60,35,17.64,(17.00 - 18.00),Pass,21.19,-29.33,Pass,19.18,-40.14,Pass,3,43,486,-837,0.48,Pass,50,Pass
+9.4,5G,802.11ax,3,MCS7,80MHz,5775,-0.61,34,17.66,(17.00 - 18.00),Pass,21.24,-28.94,Pass,19.26,-39.49,Pass,4,44,363,1152,0.38,Pass,50,Pass
+TX Calibration 5GHz
+Test,Band,Tx Mode,Ant,Rate,BW,Frequency,Clock Error,Power offset,Measure Power,Power Limit,Power Pass/Fail,Power @ EVM -25dB,Max Power Evm,Power & EVM Limit [>=19dBm] [<=-25dB],Power @ EVM -36dB,UEvm, Power & EVM Limit [>=16dBm] [<=-36dB],S2D GAIN Reg1,S2D OFFSET Reg1,COEFF A Reg1,COEFF B Reg1,Error Reg1,Error Limit Reg1 [<1],Temp,Pass/Fail
+10.1,5G,802.11ax,0,MCS7,160MHz,5250,-0.62,36,17.63,(17.00 - 18.00),Pass,22.06,-27.81,Pass,19.14,-39.23,Pass,4,42,368,1194,0.21,Pass,50,Pass
+10.1,5G,802.11ax,1,MCS7,160MHz,5250,-0.64,35,17.47,(17.00 - 18.00),Pass,22.74,-25.33,Pass,19.92,-37.19,Pass,3,42,461,-669,0.28,Pass,51,Pass
+10.1,5G,802.11ax,2,MCS7,160MHz,5250,-0.65,35,17.44,(17.00 - 18.00),Pass,22.73,-25.87,Pass,19.90,-37.32,Pass,4,41,373,896,0.35,Pass,51,Pass
+10.1,5G,802.11ax,3,MCS7,160MHz,5250,-0.67,34,17.34,(17.00 - 18.00),Pass,22.65,-25.90,Pass,19.83,-37.71,Pass,4,43,369,1249,0.25,Pass,50,Pass
+10.2,5G,802.11ax,0,MCS7,160MHz,5570,-0.69,34,17.65,(17.00 - 18.00),Pass,23.09,-26.15,Pass,20.22,-38.80,Pass,4,42,368,1255,0.20,Pass,51,Pass
+10.2,5G,802.11ax,1,MCS7,160MHz,5570,-0.72,35,17.66,(17.00 - 18.00),Pass,23.02,-25.26,Pass,20.14,-37.48,Pass,4,43,347,1488,0.22,Pass,51,Pass
+10.2,5G,802.11ax,2,MCS7,160MHz,5570,-0.72,35,17.65,(17.00 - 18.00),Pass,23.09,-25.84,Pass,20.18,-36.65,Pass,4,41,372,984,0.27,Pass,51,Pass
+10.2,5G,802.11ax,3,MCS7,160MHz,5570,-0.74,34,17.70,(17.00 - 18.00),Pass,23.10,-25.27,Pass,20.28,-37.78,Pass,4,43,368,1321,0.25,Pass,51,Pass
+RX Calibration 5G
+Test,Band,Ant,Crossing Point 2 [MHz],Crossing Point 1 [MHz],Crossing Point 3 [MHz],LNA GAIN 0,Pass/Fail(35+-/4),LNA GAIN 1,Pass/Fail(32+-/4),LNA GAIN 2,Pass/Fail(29+-/4),LNA GAIN 3,Pass/Fail(26+-/4),LNA GAIN 4,Pass/Fail(22+-/4),LNA GAIN 5,Pass/Fail(19+-/4),LNA GAIN 6,Pass/Fail(16+-/4),LNA GAIN 7,Pass/Fail(15+-/4),LNA GAIN 8,Pass/Fail(12+-/4),LNA GAIN 9,Pass/Fail(9+-/4),LNA GAIN 10,Pass/Fail(5+-/4),LNA GAIN 11,Pass/Fail(1+-/4),LNA GAIN 12,Pass/Fail(-1+-/4),LNA GAIN 13,Pass/Fail(-4+-/4),Flatness High Gain 5180,Flatness High Gain 5300,Flatness High Gain 5500,Flatness High Gain 5700,Flatness High Gain 5825,Flatness High Gain Pass/Fail(+-4),Flatness Bypass 5180,Flatness Bypass 5300,Flatness Bypass 5500,Flatness Bypass 5700,Flatness Bypass 5825,Flatness Bypass Pass/Fail(+-4),Temp,Pass/Fail
+11,5G,0,,,,35.25,Pass,32.25,Pass,28.69,Pass,25.59,Pass,22.44,Pass,19.25,Pass,15.97,Pass,14.31,Pass,11.39,Pass,7.92,Pass,4.64,Pass,1.26,Pass,-2.02,Pass,-5.11,Pass,-0.50,0.00,0.00,0.00,-0.50,Pass,0.00,0.50,0.00,0.00,-0.50,Pass,51,Pass
+11,5G,1,,,,35.72,Pass,32.91,Pass,29.44,Pass,26.35,Pass,23.19,Pass,20.00,Pass,16.72,Pass,15.07,Pass,12.24,Pass,8.67,Pass,5.58,Pass,2.20,Pass,-1.08,Pass,-4.17,Pass,-0.50,0.50,0.00,0.00,-0.50,Pass,-0.50,0.50,0.00,0.00,-0.50,Pass,51,Pass
+11,5G,2,,,,35.48,Pass,32.29,Pass,28.82,Pass,25.64,Pass,22.20,Pass,18.92,Pass,15.82,Pass,15.29,Pass,12.46,Pass,9.08,Pass,5.99,Pass,2.62,Pass,-0.67,Pass,-3.76,Pass,0.00,0.00,0.00,0.50,-0.50,Pass,-0.50,0.50,0.00,0.00,-0.50,Pass,51,Pass
+11,5G,3,,,,34.53,Pass,31.53,Pass,28.07,Pass,24.78,Pass,21.25,Pass,18.25,Pass,15.07,Pass,14.53,Pass,11.52,Pass,8.14,Pass,4.95,Pass,1.58,Pass,-1.70,Pass,-4.89,Pass,0.50,0.50,0.00,0.00,-0.50,Pass,-1.00,0.00,0.00,0.00,-0.50,Pass,51,Pass
+RX Calibration DFS
+Test,Band,Ant,Crossing Point 2 [MHz],Crossing Point 1 [MHz],Crossing Point 3 [MHz],LNA GAIN 0,Pass/Fail(19+-/3),LNA GAIN 1,Pass/Fail(16+-/3),LNA GAIN 2,Pass/Fail(12+-/3),LNA GAIN 3,Pass/Fail(9+-/3),LNA GAIN 4,Pass/Fail(5+-/3),LNA GAIN 5,Pass/Fail(2+-/3),LNA GAIN 6,Pass/Fail(-1+-/3),LNA GAIN 7,Pass/Fail(19+-/3),LNA GAIN 8,Pass/Fail(16+-/3),LNA GAIN 9,Pass/Fail(13+-/3),LNA GAIN 10,Pass/Fail(9+-/3),LNA GAIN 11,Pass/Fail(5+-/3),LNA GAIN 12,Pass/Fail(1+-/3),LNA GAIN 13,Pass/Fail(-1+-/3),Flatness High Gain 5180,Flatness High Gain 5300,Flatness High Gain 5500,Flatness High Gain 5700,Flatness High Gain 5825,Flatness High Gain Pass/Fail(+-4),Flatness Bypass 5180,Flatness Bypass 5300,Flatness Bypass 5500,Flatness Bypass 5700,Flatness Bypass 5825,Flatness Bypass Pass/Fail(+-4),Temp,Pass/Fail
+TX Calibration 6GHz
+Test,Band,Tx Mode,Ant,Rate,BW,Frequency,Clock Error,Power offset,Measure Power,Power Limit,Power Pass/Fail,Power @ EVM -25dB,Max Power Evm,Power & EVM Limit [>=20dBm] [<=-25dB],Power @ EVM -36dB,UEvm, Power & EVM Limit [>=16dBm] [<=-36dB],S2D GAIN Reg1,S2D OFFSET Reg1,COEFF A Reg1,COEFF B Reg1,Error Reg1,Error Limit Reg1 [<1],Temp,Pass/Fail
+13.1,6G,802.11ax,0,MCS7,20MHz,5955,-1.10,34,17.33,(17.00 - 18.00),Pass,21.90,-28.16,Pass,19.90,-39.20,Pass,3,44,454,-229,0.43,Pass,51,Pass
+13.1,6G,802.11ax,1,MCS7,20MHz,5955,-1.12,33,17.38,(17.00 - 18.00),Pass,21.85,-26.56,Pass,19.90,-37.10,Pass,4,46,344,1802,0.38,Pass,51,Pass
+13.1,6G,802.11ax,2,MCS7,20MHz,5955,-1.12,35,17.62,(17.00 - 18.00),Pass,22.24,-27.35,Pass,20.24,-38.25,Pass,3,45,460,-152,0.31,Pass,51,Pass
+13.1,6G,802.11ax,3,MCS7,20MHz,5955,-1.13,35,17.29,(17.00 - 18.00),Pass,21.89,-27.32,Pass,19.89,-37.85,Pass,3,44,444,-329,0.43,Pass,50,Pass
+13.2,6G,802.11ax,0,MCS7,20MHz,6135,-1.14,34,17.64,(17.00 - 18.00),Pass,23.31,-27.29,Pass,20.25,-38.62,Pass,3,44,457,-61,0.38,Pass,51,Pass
+13.2,6G,802.11ax,1,MCS7,20MHz,6135,-1.15,32,17.32,(17.00 - 18.00),Pass,22.84,-27.30,Pass,20.86,-37.71,Pass,3,44,460,-242,0.32,Pass,51,Pass
+13.2,6G,802.11ax,2,MCS7,20MHz,6135,-1.15,34,17.58,(17.00 - 18.00),Pass,23.21,-27.43,Pass,21.21,-36.92,Pass,3,43,463,-398,0.27,Pass,51,Pass
+13.2,6G,802.11ax,3,MCS7,20MHz,6135,-1.15,34,17.38,(17.00 - 18.00),Pass,23.00,-27.79,Pass,21.01,-37.44,Pass,3,44,446,-54,0.30,Pass,50,Pass
+13.3,6G,802.11ax,0,MCS7,20MHz,6335,-1.17,33,17.50,(17.00 - 18.00),Pass,23.02,-25.70,Pass,20.06,-41.59,Pass,3,44,456,104,0.43,Pass,51,Pass
+13.3,6G,802.11ax,1,MCS7,20MHz,6335,-1.16,32,17.45,(17.00 - 18.00),Pass,21.93,-28.42,Pass,19.96,-39.47,Pass,4,45,345,1947,0.42,Pass,51,Pass
+13.3,6G,802.11ax,2,MCS7,20MHz,6335,-1.18,33,17.49,(17.00 - 18.00),Pass,23.03,-26.34,Pass,21.07,-36.46,Pass,3,43,461,-157,0.29,Pass,51,Pass
+13.3,6G,802.11ax,3,MCS7,20MHz,6335,-1.17,35,17.64,(17.00 - 18.00),Pass,22.25,-28.34,Pass,20.26,-38.97,Pass,3,44,442,106,0.42,Pass,51,Pass
+13.4,6G,802.11ax,0,MCS7,20MHz,6555,-1.18,35,17.26,(17.00 - 18.00),Pass,21.80,-28.42,Pass,19.83,-37.53,Pass,3,43,455,-417,0.47,Pass,51,Pass
+13.4,6G,802.11ax,1,MCS7,20MHz,6555,-1.18,34,17.33,(17.00 - 18.00),Pass,21.79,-26.99,Pass,19.85,-36.93,Pass,3,44,456,-367,0.43,Pass,51,Pass
+13.4,6G,802.11ax,2,MCS7,20MHz,6555,-1.19,36,17.56,(17.00 - 18.00),Pass,22.09,-26.79,Pass,20.15,-36.55,Pass,3,44,459,-221,0.38,Pass,51,Pass
+13.4,6G,802.11ax,3,MCS7,20MHz,6555,-1.19,37,17.50,(17.00 - 18.00),Pass,22.08,-27.67,Pass,20.11,-37.30,Pass,3,46,441,269,0.35,Pass,51,Pass
+13.5,6G,802.11ax,0,MCS7,20MHz,6755,-1.17,36,17.62,(17.00 - 18.00),Pass,23.29,-26.42,Pass,20.30,-38.09,Pass,3,45,455,-241,0.37,Pass,51,Pass
+13.5,6G,802.11ax,1,MCS7,20MHz,6755,-1.20,34,17.67,(17.00 - 18.00),Pass,23.18,-25.20,Pass,20.25,-40.16,Pass,3,46,458,-91,0.36,Pass,51,Pass
+13.5,6G,802.11ax,2,MCS7,20MHz,6755,-1.19,35,17.36,(17.00 - 18.00),Pass,22.98,-28.19,Pass,20.98,-37.24,Pass,3,43,462,-737,0.19,Pass,51,Pass
+13.5,6G,802.11ax,3,MCS7,20MHz,6755,-1.18,35,17.70,(17.00 - 18.00),Pass,23.29,-25.77,Pass,20.34,-40.55,Pass,3,46,442,71,0.29,Pass,51,Pass
+13.6,6G,802.11ax,0,MCS7,20MHz,6915,-1.19,37,17.67,(17.00 - 18.00),Pass,22.37,-29.12,Pass,20.35,-39.19,Pass,3,47,451,-170,0.35,Pass,51,Pass
+13.6,6G,802.11ax,1,MCS7,20MHz,6915,-1.19,35,17.59,(17.00 - 18.00),Pass,23.13,-25.99,Pass,20.19,-40.51,Pass,3,49,456,31,0.27,Pass,51,Pass
+13.6,6G,802.11ax,2,MCS7,20MHz,6915,-1.19,37,17.66,(17.00 - 18.00),Pass,23.38,-26.07,Pass,20.37,-37.47,Pass,3,46,461,-572,0.20,Pass,51,Pass
+13.6,6G,802.11ax,3,MCS7,20MHz,6915,-1.19,36,17.68,(17.00 - 18.00),Pass,23.32,-25.42,Pass,20.38,-39.79,Pass,3,48,440,50,0.23,Pass,51,Pass
+13.7,6G,802.11ax,0,MCS7,20MHz,7115,-1.19,37,17.61,(17.00 - 18.00),Pass,22.14,-25.67,Pass,19.23,-40.43,Pass,3,46,449,-118,0.44,Pass,51,Pass
+13.7,6G,802.11ax,1,MCS7,20MHz,7115,-1.20,35,17.44,(17.00 - 18.00),Pass,21.94,-27.75,Pass,19.99,-37.82,Pass,3,47,456,-111,0.35,Pass,51,Pass
+13.7,6G,802.11ax,2,MCS7,20MHz,7115,-1.19,36,17.61,(17.00 - 18.00),Pass,22.19,-27.88,Pass,20.24,-38.03,Pass,3,45,459,-408,0.29,Pass,51,Pass
+13.7,6G,802.11ax,3,MCS7,20MHz,7115,-1.18,35,17.37,(17.00 - 18.00),Pass,21.93,-27.89,Pass,19.98,-38.33,Pass,3,46,440,-204,0.31,Pass,51,Pass
+TX Calibration 6GHz
+Test,Band,Tx Mode,Ant,Rate,BW,Frequency,Clock Error,Power offset,Measure Power,Power Limit,Power Pass/Fail,Power @ EVM -25dB,Max Power Evm,Power & EVM Limit [>=20dBm] [<=-25dB],Power @ EVM -36dB,UEvm, Power & EVM Limit [>=16dBm] [<=-36dB],S2D GAIN Reg1,S2D OFFSET Reg1,COEFF A Reg1,COEFF B Reg1,Error Reg1,Error Limit Reg1 [<1],Temp,Pass/Fail
+14.1,6G,802.11ax,0,MCS7,40MHz,5965,-1.20,34,17.29,(17.00 - 18.00),Pass,21.81,-27.69,Pass,19.89,-38.47,Pass,3,43,457,-385,0.35,Pass,51,Pass
+14.1,6G,802.11ax,1,MCS7,40MHz,5965,-1.20,33,17.33,(17.00 - 18.00),Pass,21.75,-26.45,Pass,19.86,-36.92,Pass,4,45,346,1642,0.31,Pass,51,Pass
+14.1,6G,802.11ax,2,MCS7,40MHz,5965,-1.20,35,17.68,(17.00 - 18.00),Pass,22.24,-26.93,Pass,20.32,-37.25,Pass,3,43,463,-542,0.24,Pass,51,Pass
+14.1,6G,802.11ax,3,MCS7,40MHz,5965,-1.20,35,17.29,(17.00 - 18.00),Pass,21.83,-26.79,Pass,19.91,-37.04,Pass,3,44,445,-233,0.33,Pass,51,Pass
+14.2,6G,802.11ax,0,MCS7,40MHz,6325,-1.20,34,17.47,(17.00 - 18.00),Pass,22.04,-28.50,Pass,20.10,-39.41,Pass,3,43,457,-242,0.37,Pass,51,Pass
+14.2,6G,802.11ax,1,MCS7,40MHz,6325,-1.20,33,17.34,(17.00 - 18.00),Pass,21.77,-27.74,Pass,19.86,-38.31,Pass,3,44,460,-269,0.29,Pass,51,Pass
+14.2,6G,802.11ax,2,MCS7,40MHz,6325,-1.20,34,17.38,(17.00 - 18.00),Pass,22.87,-25.70,Pass,20.00,-41.09,Pass,4,43,350,1449,0.16,Pass,51,Pass
+14.2,6G,802.11ax,3,MCS7,40MHz,6325,-1.20,35,17.32,(17.00 - 18.00),Pass,21.90,-27.97,Pass,19.97,-38.20,Pass,3,44,445,-77,0.33,Pass,51,Pass
+14.3,6G,802.11ax,0,MCS7,40MHz,6525,-1.21,35,17.52,(17.00 - 18.00),Pass,22.03,-27.34,Pass,20.13,-37.47,Pass,3,43,457,-262,0.38,Pass,51,Pass
+14.3,6G,802.11ax,1,MCS7,40MHz,6525,-1.21,34,17.63,(17.00 - 18.00),Pass,22.05,-26.56,Pass,20.17,-36.78,Pass,4,46,346,2026,0.34,Pass,51,Pass
+14.3,6G,802.11ax,2,MCS7,40MHz,6525,-1.20,35,17.38,(17.00 - 18.00),Pass,21.89,-28.22,Pass,19.97,-38.84,Pass,3,42,462,-597,0.23,Pass,51,Pass
+14.3,6G,802.11ax,3,MCS7,40MHz,6525,-1.20,36,17.26,(17.00 - 18.00),Pass,22.80,-25.20,Pass,19.94,-38.63,Pass,3,45,445,164,0.30,Pass,51,Pass
+14.4,6G,802.11ax,0,MCS7,40MHz,6805,-1.21,36,17.39,(17.00 - 18.00),Pass,23.11,-27.42,Pass,20.12,-36.57,Pass,3,44,458,-552,0.27,Pass,51,Pass
+14.4,6G,802.11ax,1,MCS7,40MHz,6805,-1.20,34,17.29,(17.00 - 18.00),Pass,22.76,-26.65,Pass,20.89,-36.74,Pass,3,46,462,-227,0.24,Pass,51,Pass
+14.4,6G,802.11ax,2,MCS7,40MHz,6805,-1.20,36,17.52,(17.00 - 18.00),Pass,23.13,-27.08,Pass,20.21,-37.53,Pass,3,43,465,-850,0.16,Pass,51,Pass
+14.4,6G,802.11ax,3,MCS7,40MHz,6805,-1.20,35,17.45,(17.00 - 18.00),Pass,23.05,-26.63,Pass,21.14,-37.19,Pass,3,45,446,-231,0.24,Pass,51,Pass
+14.5,6G,802.11ax,0,MCS7,40MHz,7085,-1.21,37,17.35,(17.00 - 18.00),Pass,21.81,-25.42,Pass,18.98,-40.68,Pass,3,46,452,-243,0.28,Pass,51,Pass
+14.5,6G,802.11ax,1,MCS7,40MHz,7085,-1.20,36,17.53,(17.00 - 18.00),Pass,21.92,-25.57,Pass,19.10,-39.67,Pass,3,46,458,-456,0.28,Pass,52,Pass
+14.5,6G,802.11ax,2,MCS7,40MHz,7085,-1.20,37,17.70,(17.00 - 18.00),Pass,22.20,-25.50,Pass,19.35,-38.54,Pass,3,45,462,-581,0.23,Pass,51,Pass
+14.5,6G,802.11ax,3,MCS7,40MHz,7085,-1.20,36,17.51,(17.00 - 18.00),Pass,22.00,-25.66,Pass,19.14,-40.71,Pass,3,47,441,-48,0.23,Pass,51,Pass
+TX Calibration 6GHz
+Test,Band,Tx Mode,Ant,Rate,BW,Frequency,Clock Error,Power offset,Measure Power,Power Limit,Power Pass/Fail,Power @ EVM -25dB,Max Power Evm,Power & EVM Limit [>=20dBm] [<=-25dB],Power @ EVM -36dB,UEvm, Power & EVM Limit [>=16dBm] [<=-36dB],S2D GAIN Reg1,S2D OFFSET Reg1,COEFF A Reg1,COEFF B Reg1,Error Reg1,Error Limit Reg1 [<1],Temp,Pass/Fail
+15.1,6G,802.11ax,0,MCS7,80MHz,5985,-1.21,34,17.44,(17.00 - 18.00),Pass,21.98,-27.92,Pass,20.04,-38.19,Pass,3,44,457,-29,0.46,Pass,51,Pass
+15.1,6G,802.11ax,1,MCS7,80MHz,5985,-1.20,33,17.45,(17.00 - 18.00),Pass,21.89,-26.70,Pass,19.98,-36.77,Pass,3,44,459,-297,0.40,Pass,51,Pass
+15.1,6G,802.11ax,2,MCS7,80MHz,5985,-1.19,34,17.41,(17.00 - 18.00),Pass,21.96,-28.62,Pass,20.01,-38.88,Pass,3,42,463,-617,0.30,Pass,51,Pass
+15.1,6G,802.11ax,3,MCS7,80MHz,5985,-1.19,35,17.44,(17.00 - 18.00),Pass,21.98,-27.15,Pass,20.05,-37.34,Pass,3,45,445,90,0.42,Pass,51,Pass
+15.2,6G,802.11ax,0,MCS7,80MHz,6225,-1.20,33,17.29,(17.00 - 18.00),Pass,23.89,-26.20,Pass,20.97,-39.66,Pass,3,43,461,-195,0.37,Pass,51,Pass
+15.2,6G,802.11ax,1,MCS7,80MHz,6225,-1.19,32,17.38,(17.00 - 18.00),Pass,23.85,-25.00,Pass,20.97,-38.99,Pass,4,45,348,1938,0.31,Pass,51,Pass
+15.2,6G,802.11ax,2,MCS7,80MHz,6225,-1.19,34,17.58,(17.00 - 18.00),Pass,24.20,-26.03,Pass,21.27,-39.72,Pass,3,41,464,-750,0.20,Pass,51,Pass
+15.2,6G,802.11ax,3,MCS7,80MHz,6225,-1.19,34,17.58,(17.00 - 18.00),Pass,23.24,-28.96,Pass,21.27,-38.19,Pass,3,43,447,-100,0.28,Pass,51,Pass
+15.3,6G,802.11ax,0,MCS7,80MHz,6545,-1.18,36,17.60,(17.00 - 18.00),Pass,22.19,-26.67,Pass,20.27,-36.14,Pass,3,43,455,-341,0.43,Pass,51,Pass
+15.3,6G,802.11ax,1,MCS7,80MHz,6545,-1.18,34,17.25,(17.00 - 18.00),Pass,21.73,-27.12,Pass,19.81,-36.85,Pass,4,45,346,1704,0.38,Pass,52,Pass
+15.3,6G,802.11ax,2,MCS7,80MHz,6545,-1.18,36,17.46,(17.00 - 18.00),Pass,21.99,-26.89,Pass,20.08,-36.40,Pass,3,42,461,-678,0.33,Pass,51,Pass
+15.3,6G,802.11ax,3,MCS7,80MHz,6545,-1.18,37,17.44,(17.00 - 18.00),Pass,22.02,-27.64,Pass,20.08,-37.19,Pass,3,45,443,74,0.35,Pass,51,Pass
+15.4,6G,802.11ax,0,MCS7,80MHz,6785,-1.18,36,17.47,(17.00 - 18.00),Pass,23.13,-27.09,Pass,21.18,-36.70,Pass,3,44,457,-477,0.32,Pass,52,Pass
+15.4,6G,802.11ax,1,MCS7,80MHz,6785,-1.18,34,17.36,(17.00 - 18.00),Pass,22.89,-25.95,Pass,19.97,-41.19,Pass,3,45,462,-384,0.34,Pass,52,Pass
+15.4,6G,802.11ax,2,MCS7,80MHz,6785,-1.18,36,17.57,(17.00 - 18.00),Pass,23.22,-26.71,Pass,21.29,-36.48,Pass,3,44,464,-534,0.24,Pass,51,Pass
+15.4,6G,802.11ax,3,MCS7,80MHz,6785,-1.18,35,17.51,(17.00 - 18.00),Pass,23.06,-26.05,Pass,20.16,-40.84,Pass,3,46,445,55,0.35,Pass,51,Pass
+15.5,6G,802.11ax,0,MCS7,80MHz,7025,-1.17,37,17.59,(17.00 - 18.00),Pass,22.08,-25.14,Pass,19.25,-38.96,Pass,3,46,450,-118,0.42,Pass,52,Pass
+15.5,6G,802.11ax,1,MCS7,80MHz,7025,-1.17,35,17.47,(17.00 - 18.00),Pass,21.91,-26.10,Pass,19.04,-40.36,Pass,3,46,456,-293,0.38,Pass,52,Pass
+15.5,6G,802.11ax,2,MCS7,80MHz,7025,-1.17,36,17.42,(17.00 - 18.00),Pass,21.97,-27.27,Pass,20.05,-37.18,Pass,3,45,460,-513,0.27,Pass,52,Pass
+15.5,6G,802.11ax,3,MCS7,80MHz,7025,-1.17,35,17.42,(17.00 - 18.00),Pass,21.93,-26.57,Pass,20.03,-36.04,Pass,3,47,441,100,0.35,Pass,51,Pass
+TX Calibration 6GHz
+Test,Band,Tx Mode,Ant,Rate,BW,Frequency,Clock Error,Power offset,Measure Power,Power Limit,Power Pass/Fail,Power @ EVM -25dB,Max Power Evm,Power & EVM Limit [>=20dBm] [<=-25dB],Power @ EVM -36dB,UEvm, Power & EVM Limit [>=16dBm] [<=-36dB],S2D GAIN Reg1,S2D OFFSET Reg1,COEFF A Reg1,COEFF B Reg1,Error Reg1,Error Limit Reg1 [<1],Temp,Pass/Fail
+16.1,6G,802.11ax,0,MCS7,160MHz,6025,-1.17,35,17.48,(17.00 - 18.00),Pass,21.96,-26.30,Pass,19.08,-40.00,Pass,4,45,345,1647,0.45,Pass,52,Pass
+16.1,6G,802.11ax,1,MCS7,160MHz,6025,-1.16,34,17.47,(17.00 - 18.00),Pass,21.90,-25.95,Pass,19.04,-39.69,Pass,4,47,347,1879,0.35,Pass,52,Pass
+16.1,6G,802.11ax,2,MCS7,160MHz,6025,-1.16,35,17.42,(17.00 - 18.00),Pass,21.90,-26.80,Pass,19.01,-40.10,Pass,4,45,350,1491,0.28,Pass,52,Pass
+16.1,6G,802.11ax,3,MCS7,160MHz,6025,-1.15,36,17.45,(17.00 - 18.00),Pass,21.93,-25.92,Pass,19.07,-39.62,Pass,3,46,445,-31,0.34,Pass,51,Pass
+16.2,6G,802.11ax,0,MCS7,160MHz,6345,-1.14,33,17.36,(17.00 - 18.00),Pass,22.85,-26.07,Pass,19.99,-39.14,Pass,3,43,462,-227,0.41,Pass,52,Pass
+16.2,6G,802.11ax,1,MCS7,160MHz,6345,-1.13,32,17.35,(17.00 - 18.00),Pass,22.79,-25.78,Pass,19.94,-39.21,Pass,4,44,349,1629,0.32,Pass,52,Pass
+16.2,6G,802.11ax,2,MCS7,160MHz,6345,-1.13,33,17.39,(17.00 - 18.00),Pass,22.89,-26.87,Pass,20.02,-39.33,Pass,3,41,466,-740,0.25,Pass,52,Pass
+16.2,6G,802.11ax,3,MCS7,160MHz,6345,-1.12,35,17.59,(17.00 - 18.00),Pass,22.19,-28.58,Pass,20.26,-37.38,Pass,3,44,447,-6,0.35,Pass,51,Pass
+16.3,6G,802.11ax,0,MCS7,160MHz,6665,-1.12,36,17.37,(17.00 - 18.00),Pass,22.88,-26.73,Pass,20.03,-40.33,Pass,3,45,459,-231,0.38,Pass,52,Pass
+16.3,6G,802.11ax,1,MCS7,160MHz,6665,-1.11,35,17.60,(17.00 - 18.00),Pass,22.96,-25.52,Pass,20.17,-38.72,Pass,3,46,463,-225,0.32,Pass,52,Pass
+16.3,6G,802.11ax,2,MCS7,160MHz,6665,-1.11,37,17.55,(17.00 - 18.00),Pass,23.01,-26.44,Pass,20.18,-39.62,Pass,3,46,465,-117,0.22,Pass,52,Pass
+16.3,6G,802.11ax,3,MCS7,160MHz,6665,-1.10,38,17.65,(17.00 - 18.00),Pass,23.15,-25.93,Pass,20.34,-39.19,Pass,3,46,446,-22,0.29,Pass,51,Pass
+16.4,6G,802.11ax,0,MCS7,160MHz,6985,-1.09,37,17.65,(17.00 - 18.00),Pass,22.17,-25.31,Pass,19.34,-38.04,Pass,3,46,454,-332,0.37,Pass,52,Pass
+16.4,6G,802.11ax,1,MCS7,160MHz,6985,-1.09,35,17.56,(17.00 - 18.00),Pass,22.02,-26.55,Pass,19.14,-39.40,Pass,3,47,459,-334,0.29,Pass,52,Pass
+16.4,6G,802.11ax,2,MCS7,160MHz,6985,-1.09,36,17.37,(17.00 - 18.00),Pass,21.93,-27.67,Pass,20.04,-36.24,Pass,3,45,463,-748,0.26,Pass,52,Pass
+16.4,6G,802.11ax,3,MCS7,160MHz,6985,-1.08,35,17.39,(17.00 - 18.00),Pass,21.96,-27.31,Pass,20.06,-36.05,Pass,3,47,444,-129,0.29,Pass,52,Pass
+TX Calibration 6GHz
+Test,Band,Tx Mode,Ant,Rate,BW,Frequency,Clock Error,Power offset,Measure Power,Power Limit,Power Pass/Fail,Power @ EVM -25dB,Max Power Evm,Power & EVM Limit [>=20dBm] [<=-25dB],Power @ EVM -36dB,UEvm, Power & EVM Limit [>=16dBm] [<=-36dB],S2D GAIN Reg1,S2D OFFSET Reg1,COEFF A Reg1,COEFF B Reg1,Error Reg1,Error Limit Reg1 [<1],Temp,Pass/Fail
+17.1,6G,802.11be,0,MCS7,320MHz,6105,-1.08,34,17.32,(17.00 - 18.00),Pass,22.52,-25.27,Pass,19.81,-37.39,Pass,3,43,462,-580,0.41,Pass,52,Pass
+17.1,6G,802.11be,1,MCS7,320MHz,6105,-1.07,33,17.30,(17.00 - 18.00),Pass,21.57,-28.39,Pass,19.73,-36.95,Pass,3,44,467,-633,0.35,Pass,53,Pass
+17.1,6G,802.11be,2,MCS7,320MHz,6105,-1.04,35,17.62,(17.00 - 18.00),Pass,21.94,-27.75,Pass,20.13,-36.19,Pass,3,42,469,-1013,0.28,Pass,52,Pass
+17.1,6G,802.11be,3,MCS7,320MHz,6105,-1.03,35,17.33,(17.00 - 18.00),Pass,21.64,-28.00,Pass,19.81,-36.42,Pass,3,44,450,-449,0.32,Pass,52,Pass
+17.2,6G,802.11be,0,MCS7,320MHz,6425,-1.00,34,17.46,(17.00 - 18.00),Pass,21.73,-27.79,Pass,19.91,-36.47,Pass,3,42,464,-647,0.42,Pass,53,Pass
+17.2,6G,802.11be,1,MCS7,320MHz,6425,-0.99,33,17.45,(17.00 - 18.00),Pass,21.58,-27.17,Pass,18.83,-39.80,Pass,4,45,352,1617,0.36,Pass,53,Pass
+17.2,6G,802.11be,2,MCS7,320MHz,6425,-0.98,34,17.30,(17.00 - 18.00),Pass,21.60,-28.52,Pass,19.76,-36.96,Pass,4,42,355,1026,0.24,Pass,53,Pass
+17.2,6G,802.11be,3,MCS7,320MHz,6425,-0.97,36,17.58,(17.00 - 18.00),Pass,21.83,-27.00,Pass,19.08,-39.44,Pass,3,45,452,-99,0.37,Pass,53,Pass
+17.3,6G,802.11be,0,MCS7,320MHz,6745,-0.94,37,17.59,(17.00 - 18.00),Pass,21.98,-28.03,Pass,20.15,-36.78,Pass,3,45,459,-582,0.40,Pass,53,Pass
+17.3,6G,802.11be,1,MCS7,320MHz,6745,-0.94,35,17.51,(17.00 - 18.00),Pass,21.76,-27.70,Pass,19.97,-36.36,Pass,3,46,465,-546,0.31,Pass,53,Pass
+17.3,6G,802.11be,2,MCS7,320MHz,6745,-0.94,36,17.27,(17.00 - 18.00),Pass,22.51,-26.07,Pass,19.81,-38.31,Pass,3,44,468,-914,0.25,Pass,53,Pass
+17.3,6G,802.11be,3,MCS7,320MHz,6745,-0.93,36,17.58,(17.00 - 18.00),Pass,21.96,-28.04,Pass,20.14,-36.87,Pass,3,47,449,-123,0.31,Pass,53,Pass
+17.4,6G,802.11be,0,MCS7,320MHz,6905,-0.92,37,17.55,(17.00 - 18.00),Pass,21.84,-26.97,Pass,19.12,-38.89,Pass,3,46,457,-413,0.33,Pass,53,Pass
+17.4,6G,802.11be,1,MCS7,320MHz,6905,-0.94,35,17.46,(17.00 - 18.00),Pass,21.63,-27.15,Pass,18.91,-38.02,Pass,4,47,349,1466,0.32,Pass,54,Pass
+17.4,6G,802.11be,2,MCS7,320MHz,6905,-0.97,37,17.65,(17.00 - 18.00),Pass,21.97,-27.46,Pass,20.19,-36.10,Pass,3,45,467,-816,0.25,Pass,53,Pass
+17.4,6G,802.11be,3,MCS7,320MHz,6905,-0.98,36,17.62,(17.00 - 18.00),Pass,21.89,-26.61,Pass,19.17,-38.48,Pass,4,48,337,1792,0.35,Pass,53,Pass
+RX Calibration 6G
+Test,Band,Ant,Crossing Point 2 [MHz],Crossing Point 1 [MHz],Crossing Point 3 [MHz],LNA GAIN 0,Pass/Fail(35+-/4),LNA GAIN 1,Pass/Fail(33+-/4),LNA GAIN 2,Pass/Fail(30+-/4),LNA GAIN 3,Pass/Fail(26+-/4),LNA GAIN 4,Pass/Fail(23+-/4),LNA GAIN 5,Pass/Fail(20+-/4),LNA GAIN 6,Pass/Fail(16+-/4),LNA GAIN 7,Pass/Fail(13+-/4),LNA GAIN 8,Pass/Fail(10+-/4),LNA GAIN 9,Pass/Fail(7+-/4),LNA GAIN 10,Pass/Fail(4+-/4),LNA GAIN 11,Pass/Fail(1+-/4),LNA GAIN 12,Pass/Fail(-1+-/4),LNA GAIN 13,Pass/Fail(-4+-/4),Flatness High Gain 5955,Flatness High Gain 6275,Flatness High Gain 6835,Flatness High Gain 6915,Flatness High Gain 7115,Flatness High Gain Pass/Fail(+-4),Flatness Bypass 5955,Flatness Bypass 6275,Flatness Bypass 6835,Flatness Bypass 6915,Flatness Bypass 7115,Flatness Bypass Pass/Fail(+-4),Temp,Pass/Fail
+18,6G,0,,,,36.28,Pass,33.25,Pass,29.88,Pass,26.81,Pass,23.25,Pass,19.97,Pass,16.91,Pass,13.53,Pass,10.44,Pass,6.97,Pass,3.69,Pass,0.50,Pass,-2.87,Pass,-5.87,Pass,-0.50,-0.50,-1.50,-2.00,-2.00,Pass,-0.50,0.50,0.00,0.00,0.00,Pass,54,Pass
+18,6G,1,,,,36.62,Pass,33.59,Pass,30.40,Pass,27.25,Pass,23.87,Pass,20.59,Pass,17.44,Pass,14.06,Pass,10.97,Pass,7.41,Pass,4.31,Pass,0.94,Pass,-2.34,Pass,-5.44,Pass,-1.00,0.00,-2.00,-2.50,-2.00,Pass,-0.50,0.00,-0.50,-0.50,-0.50,Pass,54,Pass
+18,6G,2,,,,36.33,Pass,33.30,Pass,29.74,Pass,26.58,Pass,23.11,Pass,19.92,Pass,16.68,Pass,13.58,Pass,10.40,Pass,6.93,Pass,3.74,Pass,0.46,Pass,-2.92,Pass,-6.10,Pass,-0.50,-0.50,-1.50,-2.00,-2.00,Pass,-0.50,0.50,-0.50,-0.50,-0.50,Pass,54,Pass
+18,6G,3,,,,36.44,Pass,33.23,Pass,29.76,Pass,26.41,Pass,22.94,Pass,19.57,Pass,16.51,Pass,14.26,Pass,11.35,Pass,7.89,Pass,4.70,Pass,1.42,Pass,-1.86,Pass,-5.05,Pass,-0.50,-0.50,-1.00,-1.50,-2.50,Pass,-0.50,0.50,-1.00,-1.50,-1.50,Pass,54,Pass
+Tx Performance
+Test,Band,Tx Mode,Ant,Rate,Signal BW,Spectrum BW,Frequency,Channel,Preamble,Guard Interval,GILTF,Coding Type,SS,Fixed Power,Open/Close loop,Temperature,DUT Transmit Power,Limit Spec On/Off,Volt,Power,Power Error,Limit[Power Error],EVM,Limit[EVM],Clock Error S1,Limit[Clock],Frequency Error Hz,Frequency Error ppm,Limit[Freq],Lo Leakage,Limit[Lo leakage],Lo Leakage Margin,Limit[Lo leakage Margin],Mask Violation,Limit[Mask Violation],Flatness Margin,Spectral Mask Margin,Worst Mask Margin,Error Message,Pass/Fail
+21.1.1,24G,802.11n,0,MCS7,20MHz,20MHZ,2412,1,N/A,Long,N/A,LDPC,1,false,Close,50,24,Off,12602,23.96,-0.04, ,-35.91,(<-30),-1.02, ,-2861.94,-1.19,(-10 - 10),-57.69, ,42.69, ,0.00,(<1),[3.90 3.88 3.85 3.85 ],[9.77 9.35 8.04 8.53 6.44 6.03 8.47 7.83 ],[-30.04 -29.69 -11.13 -10.90 10.86 11.09 29.38 30.31 ],No Error,Pass
+21.1.2,24G,802.11n,0,MCS7,20MHz,20MHZ,2472,13,N/A,Long,N/A,LDPC,1,false,Close,50,24,Off,12493,23.83,-0.17, ,-35.15,(<-30),-1.04, ,-2910.63,-1.18,(-10 - 10),-60.10, ,45.10, ,0.00,(<1),[3.98 3.93 3.92 3.93 ],[7.43 7.10 6.62 7.27 5.18 4.65 4.56 4.79 ],[-30.35 -29.65 -11.13 -10.90 10.86 11.09 29.38 30.31 ],No Error,Pass
+21.2.1,24G,802.11n,1,MCS7,20MHz,20MHZ,2412,1,N/A,Long,N/A,LDPC,1,false,Close,51,24,Off,12411,23.93,-0.07, ,-36.27,(<-30),-1.00, ,-2813.75,-1.17,(-10 - 10),-60.00, ,45.00, ,0.00,(<1),[3.91 3.86 3.88 3.90 ],[11.16 10.33 8.11 8.57 6.52 6.02 8.85 8.93 ],[-30.63 -29.69 -11.13 -10.90 10.86 11.09 29.38 30.35 ],No Error,Pass
+21.2.2,24G,802.11n,1,MCS7,20MHz,20MHZ,2472,13,N/A,Long,N/A,LDPC,1,false,Close,50,24,Off,12456,23.78,-0.22, ,-36.12,(<-30),-0.99, ,-2860.38,-1.16,(-10 - 10),-60.49, ,45.49, ,0.00,(<1),[3.97 3.94 3.93 3.91 ],[8.43 8.11 6.74 7.37 5.31 4.57 5.30 5.94 ],[-30.12 -29.65 -11.13 -10.90 10.86 11.09 29.38 30.31 ],No Error,Pass
+21.3.1,24G,802.11n,2,MCS7,20MHz,20MHZ,2412,1,N/A,Long,N/A,LDPC,1,false,Close,50,24,Off,12498,23.95,-0.05, ,-36.33,(<-30),-1.03, ,-2776.79,-1.15,(-10 - 10),-71.18, ,56.18, ,0.00,(<1),[3.89 3.87 3.88 3.88 ],[9.45 9.50 8.04 8.49 6.45 6.09 8.05 7.40 ],[-30.00 -29.69 -11.13 -10.90 10.86 11.09 29.38 30.31 ],No Error,Pass
+21.3.2,24G,802.11n,2,MCS7,20MHz,20MHZ,2472,13,N/A,Long,N/A,LDPC,1,false,Close,50,24,Off,12357,23.86,-0.14, ,-35.31,(<-30),-1.03, ,-2832.45,-1.15,(-10 - 10),-67.06, ,52.06, ,0.00,(<1),[3.97 3.94 3.94 3.92 ],[7.89 7.32 6.64 7.30 5.18 4.65 4.58 5.07 ],[-30.08 -29.65 -11.13 -10.90 10.86 11.09 29.38 30.31 ],No Error,Pass
+21.4.1,24G,802.11n,3,MCS7,20MHz,20MHZ,2412,1,N/A,Long,N/A,LDPC,1,false,Close,50,24,Off,12599,24.05,0.05, ,-35.16,(<-30),-0.91, ,-2758.33,-1.14,(-10 - 10),-57.02, ,42.02, ,0.00,(<1),[3.90 3.84 3.87 3.87 ],[10.60 10.52 7.96 8.57 6.49 6.05 8.72 7.57 ],[-30.04 -29.69 -11.13 -10.94 10.86 11.09 29.38 30.31 ],No Error,Pass
+21.4.2,24G,802.11n,3,MCS7,20MHz,20MHZ,2472,13,N/A,Long,N/A,LDPC,1,false,Close,50,24,Off,12565,23.72,-0.28, ,-34.45,(<-30),-0.97, ,-2820.75,-1.14,(-10 - 10),-69.27, ,54.27, ,0.00,(<1),[3.97 3.89 3.90 3.88 ],[8.25 8.20 6.65 7.37 5.27 4.53 5.25 6.01 ],[-30.12 -29.65 -11.13 -10.94 10.86 11.09 29.38 30.04 ],No Error,Pass
+22.1.1,24G,802.11be,0,MCS13,40MHz,40MHz,2442,7,N/A,N/A,GILTF0,LDPC,1,false,Close,50,21,Off,10989,21.25,0.25, ,-43.1,(<-41),-1.12, ,-2780.19,-1.14,(-10 - 10),-63.66, ,31.66, ,0.00,(<1),[3.91 3.72 3.73 3.74 ],[13.73 13.44 8.50 8.94 9.54 8.99 13.03 13.45 ],[-60.00 -59.96 -20.51 -20.47 20.47 20.51 59.53 60.00 ],No Error,Pass
+22.2.1,24G,802.11be,1,MCS13,40MHz,40MHz,2442,7,N/A,N/A,GILTF0,LDPC,1,false,Close,50,21,Off,10796,21.11,0.11, ,-43.08,(<-41),-1.12, ,-2768.36,-1.13,(-10 - 10),-69.51, ,37.51, ,0.00,(<1),[3.87 3.74 3.74 3.80 ],[13.19 13.25 8.41 8.86 9.61 9.08 13.37 14.01 ],[-60.00 -59.96 -20.51 -20.47 20.47 20.51 59.41 60.00 ],No Error,Pass
+22.3.1,24G,802.11be,2,MCS13,40MHz,40MHz,2442,7,N/A,N/A,GILTF0,LDPC,1,false,Close,50,21,Off,10916,21.2,0.2, ,-43.66,(<-41),-1.12, ,-2768.50,-1.13,(-10 - 10),-55.06, ,23.06, ,0.00,(<1),[3.86 3.74 3.72 3.77 ],[13.77 13.65 8.44 8.89 9.60 9.04 13.13 13.08 ],[-60.00 -59.65 -20.51 -20.47 20.47 20.51 59.96 60.00 ],No Error,Pass
+22.4.1,24G,802.11be,3,MCS13,40MHz,40MHz,2442,7,N/A,N/A,GILTF0,LDPC,1,false,Close,50,21,Off,10885,21.16,0.16, ,-42.75,(<-41),-1.12, ,-2770.27,-1.13,(-10 - 10),-59.41, ,27.41, ,0.00,(<1),[3.86 3.73 3.73 3.79 ],[14.55 14.35 8.36 8.80 9.62 9.13 13.71 14.18 ],[-60.00 -59.34 -20.51 -20.47 20.47 20.51 59.84 60.00 ],No Error,Pass
+23.1.1,5G,802.11ag,0,OFDM 54,20MHz,20MHZ,5180,36,N/A,N/A,N/A,N/A,1,false,Close,51,20.5,Off,12875,20.37,-0.13, ,-30.91,(<-28),-1.52, ,-5926.76,-1.14,(-10 - 10),-61.33, ,46.33, ,0.00,(<1),[3.93 3.89 3.91 3.91 ],[10.18 10.15 8.97 9.44 8.33 8.11 10.01 10.51 ],[-30.00 -29.06 -11.02 -10.98 10.98 11.21 29.69 30.35 ],No Error,Pass
+23.1.2,5G,802.11ag,0,OFDM 54,20MHz,20MHZ,5500,100,N/A,N/A,N/A,N/A,1,false,Close,50,20.5,Off,12984,20.31,-0.19, ,-31.49,(<-28),-1.49, ,-6301.98,-1.15,(-10 - 10),-55.84, ,40.84, ,0.00,(<1),[3.86 3.86 3.91 3.98 ],[9.49 9.14 8.99 9.50 8.93 8.59 8.98 9.77 ],[-30.98 -29.69 -11.02 -10.98 10.98 11.21 28.71 30.66 ],No Error,Pass
+23.1.3,5G,802.11ag,0,OFDM 54,20MHz,20MHZ,5825,165,N/A,N/A,N/A,N/A,1,false,Close,51,20.5,Off,13372,20.54,0.04, ,-33.85,(<-28),-1.49, ,-6725.92,-1.15,(-10 - 10),-52.33, ,37.33, ,0.00,(<1),[3.85 3.88 3.90 3.95 ],[10.74 10.74 9.44 9.62 9.15 8.98 10.84 11.39 ],[-30.98 -29.06 -11.02 -10.94 10.98 11.21 29.69 30.66 ],No Error,Pass
+23.2.1,5G,802.11ag,1,OFDM 54,20MHz,20MHZ,5180,36,N/A,N/A,N/A,N/A,1,false,Close,50,20.5,Off,12462,20.28,-0.22, ,-30.46,(<-28),-1.54, ,-6006.34,-1.16,(-10 - 10),-67.40, ,52.40, ,0.00,(<1),[3.92 3.89 3.93 3.93 ],[9.16 9.24 8.82 9.34 8.44 8.11 9.41 9.88 ],[-30.00 -29.06 -11.02 -10.98 10.98 11.21 28.71 30.35 ],No Error,Pass
+23.2.2,5G,802.11ag,1,OFDM 54,20MHz,20MHZ,5500,100,N/A,N/A,N/A,N/A,1,false,Close,50,20.5,Off,12923,20.36,-0.14, ,-29.51,(<-28),-1.56, ,-6429.08,-1.17,(-10 - 10),-64.37, ,49.37, ,0.00,(<1),[3.86 3.85 3.91 4.01 ],[8.64 8.15 8.51 9.13 8.64 8.17 8.32 8.96 ],[-30.00 -29.69 -11.02 -10.98 10.98 11.21 28.71 30.35 ],No Error,Pass
+23.2.3,5G,802.11ag,1,OFDM 54,20MHz,20MHZ,5825,165,N/A,N/A,N/A,N/A,1,false,Close,50,20.5,Off,12187,20.68,0.18, ,-33.01,(<-28),-1.55, ,-6829.02,-1.17,(-10 - 10),-55.31, ,40.31, ,0.00,(<1),[3.88 3.89 3.91 3.94 ],[9.90 9.87 9.32 9.52 9.03 8.72 9.82 10.29 ],[-30.98 -29.69 -11.02 -10.94 10.98 11.21 29.38 30.66 ],No Error,Pass
+23.3.1,5G,802.11ag,2,OFDM 54,20MHz,20MHZ,5180,36,N/A,N/A,N/A,N/A,1,false,Close,50,20.5,Off,13134,20.29,-0.21, ,-31.74,(<-28),-1.41, ,-6133.90,-1.18,(-10 - 10),-61.73, ,46.73, ,0.00,(<1),[3.91 3.89 3.90 3.93 ],[10.40 10.47 9.14 9.66 8.55 8.34 10.35 10.75 ],[-30.00 -29.06 -11.02 -10.98 10.98 11.25 28.71 30.35 ],No Error,Pass
+23.3.2,5G,802.11ag,2,OFDM 54,20MHz,20MHZ,5500,100,N/A,N/A,N/A,N/A,1,false,Close,50,20.5,Off,12675,20.42,-0.08, ,-30.03,(<-28),-1.39, ,-6548.89,-1.19,(-10 - 10),-67.28, ,52.28, ,0.00,(<1),[3.86 3.82 3.93 3.95 ],[9.27 9.02 8.94 9.54 8.51 8.22 9.12 9.90 ],[-30.00 -29.69 -11.02 -10.98 10.98 11.21 28.71 30.63 ],No Error,Pass
+23.3.3,5G,802.11ag,2,OFDM 54,20MHz,20MHZ,5825,165,N/A,N/A,N/A,N/A,1,false,Close,50,20.5,Off,12256,20.56,0.06, ,-34.44,(<-28),-1.55, ,-6973.87,-1.20,(-10 - 10),-52.40, ,37.40, ,0.00,(<1),[3.85 3.87 3.90 3.99 ],[11.08 11.22 9.50 9.67 9.26 9.06 11.44 11.68 ],[-30.98 -29.69 -11.02 -10.94 10.98 11.21 29.38 30.66 ],No Error,Pass
+23.4.1,5G,802.11ag,3,OFDM 54,20MHz,20MHZ,5180,36,N/A,N/A,N/A,N/A,1,false,Close,50,20.5,Off,13253,20.27,-0.23, ,-31.55,(<-28),-1.44, ,-6246.55,-1.21,(-10 - 10),-63.34, ,48.34, ,0.00,(<1),[3.89 3.85 3.90 3.92 ],[9.67 9.60 9.17 9.73 8.51 8.35 10.24 10.79 ],[-30.00 -29.06 -11.02 -10.98 10.98 11.21 28.71 30.35 ],No Error,Pass
+23.4.2,5G,802.11ag,3,OFDM 54,20MHz,20MHZ,5500,100,N/A,N/A,N/A,N/A,1,false,Close,50,20.5,Off,13126,20.39,-0.11, ,-31.1,(<-28),-1.53, ,-6648.63,-1.21,(-10 - 10),-59.08, ,44.08, ,0.00,(<1),[3.85 3.82 3.93 3.98 ],[9.66 8.97 8.94 9.53 8.90 8.57 9.00 9.54 ],[-30.98 -29.69 -11.02 -10.98 10.98 11.21 28.71 30.35 ],No Error,Pass
+23.4.3,5G,802.11ag,3,OFDM 54,20MHz,20MHZ,5825,165,N/A,N/A,N/A,N/A,1,false,Close,50,20.5,Off,11745,20.64,0.14, ,-32.46,(<-28),-1.54, ,-7049.64,-1.21,(-10 - 10),-57.85, ,42.85, ,0.00,(<1),[3.85 3.85 3.90 3.99 ],[10.11 9.86 9.26 9.69 9.21 8.92 10.24 10.93 ],[-30.98 -29.69 -11.02 -10.98 10.98 11.02 29.38 30.35 ],No Error,Pass
+24.1.1,5G,802.11n,0,MCS7,40MHz,40MHz,5795,159,N/A,Long,N/A,LDPC,1,false,Close,50,20,Off,12613,19.83,-0.17, ,-35.54,(<-30),-1.15, ,-6989.01,-1.21,(-10 - 10),-61.62, ,41.62, ,0.00,(<1),[3.93 3.64 3.60 4.05 ],[11.46 9.46 8.71 9.30 7.82 7.87 11.08 12.19 ],[-60.00 -57.81 -21.05 -20.98 20.98 21.02 57.50 60.00 ],No Error,Pass
+24.2.1,5G,802.11n,1,MCS7,40MHz,40MHz,5795,159,N/A,Long,N/A,LDPC,1,false,Close,50,20,Off,11919,19.68,-0.32, ,-35.92,(<-30),-1.17, ,-6967.51,-1.20,(-10 - 10),-62.56, ,42.56, ,0.00,(<1),[3.93 3.65 3.63 4.04 ],[12.56 10.79 8.81 9.49 7.94 7.87 12.90 13.85 ],[-60.00 -57.81 -21.05 -20.98 20.98 21.02 57.50 60.00 ],No Error,Pass
+24.3.1,5G,802.11n,2,MCS7,40MHz,40MHz,5795,159,N/A,Long,N/A,LDPC,1,false,Close,50,20,Off,12565,19.72,-0.28, ,-35.03,(<-30),-1.14, ,-6972.20,-1.20,(-10 - 10),-65.77, ,45.77, ,0.00,(<1),[3.89 3.62 3.58 4.06 ],[10.16 8.15 8.61 9.11 7.92 7.95 9.96 11.39 ],[-60.00 -57.81 -21.02 -20.98 20.98 21.02 57.50 60.00 ],No Error,Pass
+24.4.1,5G,802.11n,3,MCS7,40MHz,40MHz,5795,159,N/A,Long,N/A,LDPC,1,false,Close,50,20,Off,12782,19.8,-0.2, ,-36.93,(<-30),-1.17, ,-6996.18,-1.21,(-10 - 10),-61.89, ,41.89, ,0.00,(<1),[3.95 3.66 3.63 4.03 ],[13.05 10.53 8.98 9.75 7.96 7.92 12.12 13.36 ],[-60.00 -57.81 -21.05 -20.98 20.98 21.02 57.50 60.00 ],No Error,Pass
+25.1.1,5G,802.11ax,0,MCS11,80MHz,80MHz,5210,42,N/A,N/A,GILTF1,LDPC,1,false,Close,50,18.5,Off,11684,18.61,0.11, ,-40.13,(<-38),-1.22, ,-6325.56,-1.21,(-10 - 10),-61.12, ,29.12, ,0.00,(<1),[4.41 3.49 3.70 3.74 ],[12.57 14.42 8.21 8.38 8.22 8.06 12.51 12.59 ],[-129.99 -95.24 -40.52 -40.49 40.49 40.52 116.87 139.98 ],No Error,Pass
+25.2.1,5G,802.11ax,1,MCS11,80MHz,80MHz,5210,42,N/A,N/A,GILTF1,LDPC,1,false,Close,50,18.5,Off,10791,18.52,0.02, ,-41.61,(<-38),-1.20, ,-6261.99,-1.20,(-10 - 10),-66.64, ,34.64, ,0.00,(<1),[4.21 3.64 3.78 3.84 ],[12.84 14.84 8.06 8.24 8.30 8.16 12.43 12.13 ],[-129.99 -95.21 -40.52 -40.49 40.49 40.52 119.33 121.14 ],No Error,Pass
+25.3.1,5G,802.11ax,2,MCS11,80MHz,80MHz,5210,42,N/A,N/A,GILTF1,LDPC,1,false,Close,49,18.5,Off,11309,18.55,0.05, ,-41.48,(<-38),-1.21, ,-6285.23,-1.21,(-10 - 10),-61.25, ,29.25, ,0.00,(<1),[4.23 3.64 3.76 3.78 ],[12.68 16.15 8.05 8.20 8.25 8.09 12.71 12.50 ],[-129.99 -94.28 -40.52 -40.49 40.49 40.52 119.41 139.98 ],No Error,Pass
+25.4.1,5G,802.11ax,3,MCS11,80MHz,80MHz,5210,42,N/A,N/A,GILTF1,LDPC,1,false,Close,49,18.5,Off,11597,18.66,0.16, ,-41.9,(<-38),-1.22, ,-6341.61,-1.22,(-10 - 10),-64.51, ,32.51, ,0.00,(<1),[4.20 3.64 3.72 3.79 ],[12.75 14.56 8.11 8.26 8.23 8.09 12.71 12.75 ],[-129.99 -91.26 -40.52 -40.49 40.49 40.52 119.36 121.14 ],No Error,Pass
+26.1.1,5G,802.11be,0,MCS13,160MHz,160MHz,5570,114,N/A,N/A,GILTF0,LDPC,1,false,Close,50,18,Off,11112,18.04,0.04, ,-43.66,(<-41),-1.24, ,-6879.05,-1.24,(-10 - 10),-64.66, ,32.66, ,0.00,(<1),[4.26 3.59 3.70 3.71 3.54 4.36 ],[17.28 16.28 9.22 9.58 9.33 9.02 15.39 16.36 ],[-240.00 -237.60 -80.51 -80.48 80.48 80.51 238.74 240.00 ],No Error,Pass
+26.2.1,5G,802.11be,1,MCS13,160MHz,160MHz,5570,114,N/A,N/A,GILTF0,LDPC,1,false,Close,50,18,Off,11428,18.01,0.01, ,-42.86,(<-41),-1.22, ,-6798.40,-1.22,(-10 - 10),-59.55, ,27.55, ,0.00,(<1),[4.13 3.69 3.70 3.70 3.50 4.37 ],[16.56 15.87 9.02 9.38 9.41 9.12 15.03 15.31 ],[-240.00 -237.71 -80.51 -80.48 80.48 80.51 238.12 240.00 ],No Error,Pass
+26.3.1,5G,802.11be,2,MCS13,160MHz,160MHz,5570,114,N/A,N/A,GILTF0,LDPC,1,false,Close,50,18,Off,11330,18.04,0.04, ,-42.64,(<-41),-1.22, ,-6818.55,-1.22,(-10 - 10),-65.87, ,33.87, ,0.00,(<1),[4.14 3.64 3.70 3.70 3.47 4.41 ],[17.17 16.13 9.07 9.46 9.42 9.14 15.01 16.05 ],[-240.00 -238.74 -80.51 -80.48 80.48 80.51 189.99 240.00 ],No Error,Pass
+26.4.1,5G,802.11be,3,MCS13,160MHz,160MHz,5570,114,N/A,N/A,GILTF0,LDPC,1,false,Close,49,18,Off,11064,18.1,0.1, ,-43.9,(<-41),-1.24, ,-6883.20,-1.24,(-10 - 10),-64.98, ,32.98, ,0.00,(<1),[4.25 3.62 3.70 3.72 3.52 4.36 ],[15.73 15.37 9.17 9.54 9.21 8.93 13.94 15.82 ],[-240.00 -238.71 -80.51 -80.48 80.48 80.51 189.99 240.00 ],No Error,Pass
+27.1.1,6G,802.11ax,0,MCS7,20MHz,20MHZ,5955,1,N/A,N/A,GILTF1,LDPC,1,false,Close,50,20,Off,11812,20.13,0.13, ,-35.68,(<-30),-1.20, ,-7266.62,-1.22,(-10 - 10),-67.86, ,35.86, ,0.00,(<1),[4.10 3.82 3.84 3.93 ],[11.89 12.03 6.45 6.90 8.14 7.54 9.28 9.41 ],[-30.51 -29.14 -10.51 -10.47 10.47 10.51 29.77 30.55 ],No Error,Pass
+27.1.2,6G,802.11ax,0,MCS7,20MHz,20MHZ,6335,77,N/A,N/A,GILTF1,LDPC,1,false,Close,51,20,Off,11341,20.05,0.05, ,-39.17,(<-30),-1.21, ,-7824.61,-1.24,(-10 - 10),-63.46, ,31.46, ,0.00,(<1),[4.01 3.87 3.84 3.93 ],[13.00 13.29 6.29 6.78 8.28 7.72 12.11 12.01 ],[-30.51 -29.61 -10.51 -10.47 10.47 10.51 29.77 30.55 ],No Error,Pass
+27.1.3,6G,802.11ax,0,MCS7,20MHz,20MHZ,6755,161,N/A,N/A,GILTF1,LDPC,1,false,Close,51,20,Off,11795,20,0, ,-38.67,(<-30),-1.23, ,-8451.53,-1.25,(-10 - 10),-60.56, ,28.56, ,0.00,(<1),[3.92 3.86 3.85 3.97 ],[12.29 12.75 6.07 6.58 8.23 7.60 12.29 12.29 ],[-30.51 -29.84 -10.51 -10.47 10.47 10.51 29.30 30.00 ],No Error,Pass
+27.1.4,6G,802.11ax,0,MCS7,20MHz,20MHZ,7115,233,N/A,N/A,GILTF1,LDPC,1,false,Close,51,20,Off,11750,19.94,-0.06, ,-35.06,(<-30),-1.25, ,-8976.24,-1.26,(-10 - 10),-66.02, ,34.02, ,0.00,(<1),[3.96 3.90 3.86 4.03 ],[11.46 11.70 5.98 6.41 8.14 7.63 10.68 10.67 ],[-30.39 -29.14 -10.51 -10.47 10.47 10.51 29.73 30.55 ],No Error,Pass
+27.2.1,6G,802.11ax,1,MCS7,20MHz,20MHZ,5955,1,N/A,N/A,GILTF1,LDPC,1,false,Close,51,20,Off,12571,20.1,0.1, ,-34.09,(<-30),-1.25, ,-7571.43,-1.27,(-10 - 10),-69.16, ,37.16, ,0.00,(<1),[4.12 3.84 3.82 3.94 ],[11.92 12.14 6.37 6.80 8.01 7.42 8.97 9.05 ],[-30.35 -29.14 -10.51 -10.47 10.47 10.51 29.77 30.55 ],No Error,Pass
+27.2.2,6G,802.11ax,1,MCS7,20MHz,20MHZ,6335,77,N/A,N/A,GILTF1,LDPC,1,false,Close,51,20,Off,12366,19.96,-0.04, ,-37.72,(<-30),-1.27, ,-8100.45,-1.28,(-10 - 10),-66.66, ,34.66, ,0.00,(<1),[4.00 3.87 3.85 3.96 ],[12.59 12.79 6.18 6.65 8.23 7.69 11.84 11.80 ],[-30.47 -29.57 -10.51 -10.47 10.47 10.51 29.73 30.51 ],No Error,Pass
+27.2.3,6G,802.11ax,1,MCS7,20MHz,20MHZ,6755,161,N/A,N/A,GILTF1,LDPC,1,false,Close,51,20,Off,11492,20,0, ,-39.67,(<-30),-1.28, ,-8668.56,-1.28,(-10 - 10),-55.70, ,23.70, ,0.00,(<1),[3.94 3.87 3.86 3.99 ],[13.17 13.27 6.11 6.57 8.33 7.73 12.82 12.71 ],[-31.05 -29.61 -10.51 -10.47 10.47 10.51 29.30 30.16 ],No Error,Pass
+27.2.4,6G,802.11ax,1,MCS7,20MHz,20MHZ,7115,233,N/A,N/A,GILTF1,LDPC,1,false,Close,51,20,Off,11689,19.94,-0.06, ,-36.04,(<-30),-1.28, ,-9153.42,-1.29,(-10 - 10),-62.19, ,30.19, ,0.00,(<1),[3.96 3.89 3.89 4.02 ],[12.57 12.82 6.03 6.47 8.22 7.66 12.25 12.06 ],[-30.35 -29.57 -10.51 -10.47 10.47 10.51 29.77 30.55 ],No Error,Pass
+27.3.1,6G,802.11ax,2,MCS7,20MHz,20MHZ,5955,1,N/A,N/A,GILTF1,LDPC,1,false,Close,51,20,Off,11558,20.18,0.18, ,-36.93,(<-30),-1.27, ,-7663.35,-1.29,(-10 - 10),-56.84, ,24.84, ,0.00,(<1),[4.16 3.75 3.78 3.87 ],[11.37 11.54 6.67 7.11 8.15 7.52 8.53 8.78 ],[-30.35 -29.14 -10.51 -10.47 10.47 10.51 29.73 30.55 ],No Error,Pass
+27.3.2,6G,802.11ax,2,MCS7,20MHz,20MHZ,6335,77,N/A,N/A,GILTF1,LDPC,1,false,Close,51,20,Off,11554,20.14,0.14, ,-39.77,(<-30),-1.28, ,-8153.47,-1.29,(-10 - 10),-57.42, ,25.42, ,0.00,(<1),[4.00 3.88 3.84 3.92 ],[12.35 12.77 6.23 6.70 8.30 7.72 11.64 11.77 ],[-30.51 -29.38 -10.51 -10.47 10.47 10.51 29.73 30.51 ],No Error,Pass
+27.3.3,6G,802.11ax,2,MCS7,20MHz,20MHZ,6755,161,N/A,N/A,GILTF1,LDPC,1,false,Close,51,20,Off,12146,20.12,0.12, ,-38.87,(<-30),-1.27, ,-8686.10,-1.29,(-10 - 10),-71.98, ,39.98, ,0.00,(<1),[3.91 3.86 3.87 3.98 ],[11.88 12.19 6.08 6.57 8.24 7.62 11.86 11.90 ],[-31.29 -29.38 -10.51 -10.47 10.47 10.51 29.77 30.20 ],No Error,Pass
+27.3.4,6G,802.11ax,2,MCS7,20MHz,20MHZ,7115,233,N/A,N/A,GILTF1,LDPC,1,false,Close,51,20,Off,11855,20.12,0.12, ,-37.01,(<-30),-1.27, ,-9141.15,-1.28,(-10 - 10),-66.69, ,34.69, ,0.00,(<1),[3.95 3.90 3.90 4.03 ],[11.33 11.67 6.08 6.55 8.29 7.72 11.06 11.05 ],[-30.51 -29.57 -10.51 -10.47 10.47 10.51 29.73 30.55 ],No Error,Pass
+27.4.1,6G,802.11ax,3,MCS7,20MHz,20MHZ,5955,1,N/A,N/A,GILTF1,LDPC,1,false,Close,51,20,Off,12197,19.98,-0.02, ,-36.07,(<-30),-1.26, ,-7637.70,-1.28,(-10 - 10),-59.61, ,27.61, ,0.00,(<1),[4.15 3.82 3.81 3.90 ],[11.08 11.20 6.57 7.02 8.14 7.55 8.28 8.33 ],[-30.35 -29.14 -10.51 -10.47 10.47 10.51 29.77 30.55 ],No Error,Pass
+27.4.2,6G,802.11ax,3,MCS7,20MHz,20MHZ,6335,77,N/A,N/A,GILTF1,LDPC,1,false,Close,51,20,Off,11682,20.14,0.14, ,-37.99,(<-30),-1.27, ,-8124.49,-1.28,(-10 - 10),-60.89, ,28.89, ,0.00,(<1),[3.97 3.85 3.87 3.94 ],[11.16 11.67 6.19 6.66 8.22 7.63 10.58 10.63 ],[-30.51 -29.14 -10.51 -10.47 10.47 10.51 29.73 30.55 ],No Error,Pass
+27.4.3,6G,802.11ax,3,MCS7,20MHz,20MHZ,6755,161,N/A,N/A,GILTF1,LDPC,1,false,Close,51,20,Off,11763,20.12,0.12, ,-40,(<-30),-1.26, ,-8647.84,-1.28,(-10 - 10),-60.33, ,28.33, ,0.00,(<1),[3.93 3.85 3.87 3.95 ],[12.06 12.23 6.16 6.65 8.30 7.71 11.48 11.77 ],[-30.51 -29.61 -10.51 -10.47 10.47 10.51 29.77 30.00 ],No Error,Pass
+27.4.4,6G,802.11ax,3,MCS7,20MHz,20MHZ,7115,233,N/A,N/A,GILTF1,LDPC,1,false,Close,51,20,Off,12223,20.08,0.08, ,-35.64,(<-30),-1.26, ,-9086.16,-1.28,(-10 - 10),-58.04, ,26.04, ,0.00,(<1),[3.99 3.88 3.88 4.00 ],[11.89 12.03 6.01 6.49 8.18 7.64 11.34 11.29 ],[-30.51 -29.57 -10.51 -10.47 10.47 10.51 29.77 30.55 ],No Error,Pass
+28.1.1,6G,802.11ax,0,MCS11,80MHz,80MHz,6225,55,N/A,N/A,GILTF1,LDPC,1,false,Close,51,18,Off,10384,17.96,-0.04, ,-44.74,(<-38),-1.28, ,-7972.36,-1.28,(-10 - 10),-55.26, ,23.26, ,0.00,(<1),[4.19 3.73 3.69 4.17 ],[15.57 16.04 8.17 8.32 8.95 8.90 14.07 10.65 ],[-123.75 -119.06 -40.52 -40.49 40.49 40.52 119.77 185.01 ],No Error,Pass
+28.1.2,6G,802.11ax,0,MCS11,80MHz,80MHz,6545,119,N/A,N/A,GILTF1,LDPC,1,false,Close,51,18,Off,10814,18.04,0.04, ,-43.35,(<-38),-1.27, ,-8343.37,-1.27,(-10 - 10),-57.91, ,25.91, ,0.00,(<1),[3.76 3.69 3.25 4.73 ],[11.96 13.56 7.97 8.13 9.70 9.62 13.32 13.33 ],[-130.02 -118.62 -40.52 -40.49 40.49 40.52 119.36 120.15 ],No Error,Pass
+28.1.3,6G,802.11ax,0,MCS11,80MHz,80MHz,7025,215,N/A,N/A,GILTF1,LDPC,1,false,Close,51,18,Off,10671,18.01,0.01, ,-41.99,(<-38),-1.27, ,-8943.54,-1.27,(-10 - 10),-56.70, ,24.70, ,0.00,(<1),[4.14 3.79 3.65 4.26 ],[13.99 14.23 8.23 8.37 8.95 8.92 12.89 12.60 ],[-130.02 -118.51 -40.52 -40.49 40.49 40.52 119.88 120.67 ],No Error,Pass
+28.2.1,6G,802.11ax,1,MCS11,80MHz,80MHz,6225,55,N/A,N/A,GILTF1,LDPC,1,false,Close,51,18,Off,10617,18.04,0.04, ,-44.69,(<-38),-1.27, ,-7906.97,-1.27,(-10 - 10),-67.94, ,35.94, ,0.00,(<1),[4.15 3.73 3.71 4.18 ],[15.82 16.51 8.18 8.32 9.03 8.98 14.74 11.85 ],[-128.12 -119.62 -40.52 -40.49 40.49 40.52 119.65 185.01 ],No Error,Pass
+28.2.2,6G,802.11ax,1,MCS11,80MHz,80MHz,6545,119,N/A,N/A,GILTF1,LDPC,1,false,Close,51,18,Off,11067,18.1,0.1, ,-42.12,(<-38),-1.26, ,-8291.10,-1.27,(-10 - 10),-75.65, ,43.65, ,0.00,(<1),[3.74 3.69 3.21 4.77 ],[12.71 13.37 8.01 8.16 9.79 9.72 12.59 12.87 ],[-129.99 -119.21 -40.52 -40.49 40.49 40.52 119.79 122.29 ],No Error,Pass
+28.2.3,6G,802.11ax,1,MCS11,80MHz,80MHz,7025,215,N/A,N/A,GILTF1,LDPC,1,false,Close,52,18,Off,10616,18.05,0.05, ,-41.41,(<-38),-1.26, ,-8884.14,-1.26,(-10 - 10),-63.57, ,31.57, ,0.00,(<1),[4.06 3.77 3.60 4.32 ],[14.33 14.84 8.14 8.28 9.07 9.02 12.82 13.20 ],[-129.99 -119.97 -40.52 -40.49 40.49 40.52 119.79 122.26 ],No Error,Pass
+28.3.1,6G,802.11ax,2,MCS11,80MHz,80MHz,6225,55,N/A,N/A,GILTF1,LDPC,1,false,Close,51,18,Off,11042,18.01,0.01, ,-43.86,(<-38),-1.26, ,-7845.97,-1.26,(-10 - 10),-61.23, ,29.23, ,0.00,(<1),[4.19 3.73 3.68 4.10 ],[15.89 16.22 8.22 8.35 8.82 8.76 14.00 10.63 ],[-124.07 -119.97 -40.52 -40.49 40.49 40.52 107.87 185.01 ],No Error,Pass
+28.3.2,6G,802.11ax,2,MCS11,80MHz,80MHz,6545,119,N/A,N/A,GILTF1,LDPC,1,false,Close,51,18,Off,11009,18.05,0.05, ,-43.28,(<-38),-1.26, ,-8245.67,-1.26,(-10 - 10),-65.01, ,33.01, ,0.00,(<1),[3.71 3.67 3.21 4.81 ],[12.96 13.37 8.00 8.16 9.81 9.72 13.37 12.84 ],[-121.23 -116.95 -40.52 -40.49 40.49 40.52 119.56 120.64 ],No Error,Pass
+28.3.3,6G,802.11ax,2,MCS11,80MHz,80MHz,7025,215,N/A,N/A,GILTF1,LDPC,1,false,Close,51,18,Off,10851,18.01,0.01, ,-42.19,(<-38),-1.26, ,-8833.29,-1.26,(-10 - 10),-72.79, ,40.79, ,0.00,(<1),[4.22 3.75 3.71 4.18 ],[14.88 15.00 8.29 8.43 8.84 8.82 12.23 12.37 ],[-123.11 -117.69 -40.52 -40.49 40.49 40.52 119.24 120.67 ],No Error,Pass
+28.4.1,6G,802.11ax,3,MCS11,80MHz,80MHz,6225,55,N/A,N/A,GILTF1,LDPC,1,false,Close,51,18,Off,10580,18.13,0.13, ,-43.44,(<-38),-1.25, ,-7801.81,-1.25,(-10 - 10),-59.05, ,27.05, ,0.00,(<1),[4.10 3.70 3.68 4.15 ],[15.44 15.89 8.11 8.24 8.94 8.88 13.46 10.82 ],[-122.17 -119.36 -40.52 -40.49 40.49 40.52 119.53 185.01 ],No Error,Pass
+28.4.2,6G,802.11ax,3,MCS11,80MHz,80MHz,6545,119,N/A,N/A,GILTF1,LDPC,1,false,Close,51,18,Off,10543,18.21,0.21, ,-42.92,(<-38),-1.25, ,-8200.30,-1.25,(-10 - 10),-61.91, ,29.91, ,0.00,(<1),[3.74 3.70 3.27 4.70 ],[13.60 13.32 8.01 8.14 9.67 9.60 12.97 12.68 ],[-121.23 -119.33 -40.52 -40.49 40.49 40.52 119.36 120.73 ],No Error,Pass
+28.4.3,6G,802.11ax,3,MCS11,80MHz,80MHz,7025,215,N/A,N/A,GILTF1,LDPC,1,false,Close,52,18,Off,10554,18.19,0.19, ,-41.82,(<-38),-1.25, ,-8791.50,-1.25,(-10 - 10),-65.92, ,33.92, ,0.00,(<1),[4.19 3.76 3.68 4.24 ],[14.29 14.46 8.20 8.34 8.83 8.80 12.55 12.41 ],[-121.26 -119.68 -40.52 -40.49 40.49 40.52 119.56 122.26 ],No Error,Pass
+29.1.1,6G,802.11be,0,MCS13,320MHz,320MHz,6105,31,N/A,N/A,GILTF0,LDPC,1,false,Close,51,17,Off,10300,17.3,0.3, ,-41.71,(<-41),-1.25, ,-7641.65,-1.25,(-10 - 10),-57.04, ,25.04, ,0.01,(<1),[3.61 3.65 3.32 3.30 2.88 2.79 3.54 3.65 3.69 3.64 ],[-2.65 16.31 10.74 10.93 8.87 8.88 12.81 14.66 ],[-485.00 -472.67 -160.52 -160.49 160.46 160.49 344.99 499.12 ],No Error,Pass
+29.1.2,6G,802.11be,0,MCS13,320MHz,320MHz,6745,159,N/A,N/A,GILTF0,LDPC,1,false,Close,52,17,Off,10406,17.11,0.11, ,-42.45,(<-41),-1.25, ,-8426.19,-1.25,(-10 - 10),-55.93, ,23.93, ,0.00,(<1),[3.86 3.92 3.74 3.65 3.22 3.19 3.86 3.86 3.93 3.91 ],[14.04 12.32 10.20 10.33 8.73 8.72 13.57 14.91 ],[-484.06 -428.78 -160.52 -160.49 160.46 160.49 449.35 503.13 ],No Error,Pass
+29.2.1,6G,802.11be,1,MCS13,320MHz,320MHz,6105,31,N/A,N/A,GILTF0,LDPC,1,false,Close,52,17,Off,10224,17.28,0.28, ,-42.91,(<-41),-1.25, ,-7622.65,-1.25,(-10 - 10),-62.60, ,30.60, ,0.01,(<1),[3.77 3.92 3.55 3.48 3.05 2.95 3.60 3.66 3.73 3.66 ],[-1.62 17.27 10.66 10.86 8.81 8.82 13.74 15.28 ],[-485.00 -467.48 -160.52 -160.49 160.46 160.49 344.99 486.26 ],No Error,Pass
+29.2.2,6G,802.11be,1,MCS13,320MHz,320MHz,6745,159,N/A,N/A,GILTF0,LDPC,1,false,Close,52,17,Off,10192,17.3,0.3, ,-42.77,(<-41),-1.24, ,-8395.62,-1.24,(-10 - 10),-58.22, ,26.22, ,0.00,(<1),[4.01 4.03 3.79 3.63 3.35 3.30 3.80 3.71 4.09 4.06 ],[14.79 12.04 10.45 10.67 8.96 8.98 14.80 15.27 ],[-502.49 -436.89 -160.52 -160.49 160.46 160.49 441.88 493.50 ],No Error,Pass
+29.3.1,6G,802.11be,2,MCS13,320MHz,320MHz,6105,31,N/A,N/A,GILTF0,LDPC,1,false,Close,52,17,Off,10653,17.15,0.15, ,-42.35,(<-41),-1.24, ,-7573.05,-1.24,(-10 - 10),-62.40, ,30.40, ,0.01,(<1),[3.57 3.66 3.35 3.32 2.97 2.93 3.52 3.79 3.86 3.76 ],[-1.68 17.13 10.93 11.13 8.91 8.97 13.17 15.38 ],[-485.00 -470.35 -160.52 -160.49 160.46 160.49 344.99 488.16 ],No Error,Pass
+29.3.2,6G,802.11be,2,MCS13,320MHz,320MHz,6745,159,N/A,N/A,GILTF0,LDPC,1,false,Close,52,17,Off,10453,17.2,0.2, ,-42.72,(<-41),-1.24, ,-8350.00,-1.24,(-10 - 10),-56.23, ,24.23, ,0.00,(<1),[3.95 3.98 3.76 3.65 3.24 3.23 3.86 3.83 4.00 3.97 ],[14.95 13.53 10.26 10.43 8.76 8.83 15.13 15.54 ],[-508.47 -436.89 -160.52 -160.49 160.46 160.49 441.90 492.24 ],No Error,Pass
+29.4.1,6G,802.11be,3,MCS13,320MHz,320MHz,6105,31,N/A,N/A,GILTF0,LDPC,1,false,Close,52,17,Off,10454,17.19,0.19, ,-42.52,(<-41),-1.24, ,-7543.91,-1.24,(-10 - 10),-59.91, ,27.91, ,0.01,(<1),[3.83 3.97 3.63 3.53 3.10 3.02 3.63 3.68 3.74 3.65 ],[-1.44 17.57 10.84 11.02 8.68 8.71 13.04 15.16 ],[-485.00 -478.99 -160.52 -160.49 160.46 160.49 344.99 490.30 ],No Error,Pass
+29.4.2,6G,802.11be,3,MCS13,320MHz,320MHz,6745,159,N/A,N/A,GILTF0,LDPC,1,false,Close,52,17,Off,10001,17.31,0.31, ,-42.77,(<-41),-1.23, ,-8316.80,-1.23,(-10 - 10),-64.87, ,32.87, ,0.00,(<1),[4.08 4.12 3.70 3.76 3.28 3.22 3.81 3.81 3.88 3.87 ],[14.65 12.00 10.31 10.52 8.64 8.69 14.38 15.33 ],[-506.27 -436.89 -160.52 -160.49 160.46 160.49 453.74 507.79 ],No Error,Pass
+Rx Full Sweep
+Test,Band,Rx Mode,Ant,Rate,Signal BW,Spectrum BW,Frequency,Channel,Preamble,Guard Interval,GILTF,Coding Type,SS,Uploaded File,Custom File,Waveform Name,MPDU Read,Aggregated,MRC Matrix,Power Level,Sensitivity,PER,PER PASS/FAIL,RSSI1,RSSI2,RSSI3,RSSI4,RSSI PASS/FAIL,RSSI Error 1,RSSI Error 2,RSSI Error 3,RSSI Error 4,Temp,Error Message,Pass/Fail
+30.1.1,24G,802.11be ,0,MCS13,40MHz,40MHz,2422,3,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT40_S1_MCS13.iqvsg,Off,Off,,-55,,0.2,Pass,-57.00,,,,Pass,2.00,,,,48,No Error,Pass
+30.2.1,24G,802.11be ,1,MCS13,40MHz,40MHz,2422,3,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT40_S1_MCS13.iqvsg,Off,Off,,-55,,0,Pass,,-57.00,,,Pass,,2.00,,,48,No Error,Pass
+30.3.1,24G,802.11be ,2,MCS13,40MHz,40MHz,2422,3,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT40_S1_MCS13.iqvsg,Off,Off,,-55,,0.1,Pass,,,-57.00,,Pass,,,2.00,,48,No Error,Pass
+30.4.1,24G,802.11be ,3,MCS13,40MHz,40MHz,2422,3,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT40_S1_MCS13.iqvsg,Off,Off,,-55,,0,Pass,,,,-57.00,Pass,,,,2.00,48,No Error,Pass
+31.1.1,5G,802.11be ,0,MCS13,160MHz,160MHz,5250,50,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT160_S1_MCS13.iqvsg,Off,Off,,-46,,0,Pass,-48.00,,,,Pass,2.00,,,,49,No Error,Pass
+31.1.2,5G,802.11be ,0,MCS13,160MHz,160MHz,5570,114,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT160_S1_MCS13.iqvsg,Off,Off,,-46,,0,Pass,-47.00,,,,Pass,1.00,,,,51,No Error,Pass
+31.2.1,5G,802.11be ,1,MCS13,160MHz,160MHz,5250,50,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT160_S1_MCS13.iqvsg,Off,Off,,-46,,0.3,Pass,,-47.00,,,Pass,,1.00,,,51,No Error,Pass
+31.2.2,5G,802.11be ,1,MCS13,160MHz,160MHz,5570,114,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT160_S1_MCS13.iqvsg,Off,Off,,-46,,0,Pass,,-46.11,,,Pass,,0.11,,,51,No Error,Pass
+31.3.1,5G,802.11be ,2,MCS13,160MHz,160MHz,5250,50,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT160_S1_MCS13.iqvsg,Off,Off,,-46,,0.1,Pass,,,-47.00,,Pass,,,1.00,,51,No Error,Pass
+31.3.2,5G,802.11be ,2,MCS13,160MHz,160MHz,5570,114,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT160_S1_MCS13.iqvsg,Off,Off,,-46,,0,Pass,,,-47.00,,Pass,,,1.00,,52,No Error,Pass
+31.4.1,5G,802.11be ,3,MCS13,160MHz,160MHz,5250,50,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT160_S1_MCS13.iqvsg,Off,Off,,-46,,0.2,Pass,,,,-47.00,Pass,,,,1.00,51,No Error,Pass
+31.4.2,5G,802.11be ,3,MCS13,160MHz,160MHz,5570,114,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT160_S1_MCS13.iqvsg,Off,Off,,-46,,0.1,Pass,,,,-47.00,Pass,,,,1.00,51,No Error,Pass
+32.1.1,6G,802.11be ,0,MCS13,320MHz,320MHz,6105,31,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT320_1_S1_MCS13.iqvsg,Off,Off,,-41.5,,0.3,Pass,-43.73,,,,Pass,2.23,,,,52,No Error,Pass
+32.1.2,6G,802.11be ,0,MCS13,320MHz,320MHz,6425,95,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT320_1_S1_MCS13.iqvsg,Off,Off,,-41.5,,0.5,Pass,-43.00,,,,Pass,1.50,,,,52,No Error,Pass
+32.1.3,6G,802.11be ,0,MCS13,320MHz,320MHz,6745,159,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT320_1_S1_MCS13.iqvsg,Off,Off,,-41.5,,0.1,Pass,-44.00,,,,Pass,2.50,,,,53,No Error,Pass
+32.2.1,6G,802.11be ,1,MCS13,320MHz,320MHz,6105,31,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT320_1_S1_MCS13.iqvsg,Off,Off,,-41.5,,0,Pass,,-43.00,,,Pass,,1.50,,,53,No Error,Pass
+32.2.2,6G,802.11be ,1,MCS13,320MHz,320MHz,6425,95,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT320_1_S1_MCS13.iqvsg,Off,Off,,-41.5,,0.1,Pass,,-43.00,,,Pass,,1.50,,,53,No Error,Pass
+32.2.3,6G,802.11be ,1,MCS13,320MHz,320MHz,6745,159,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT320_1_S1_MCS13.iqvsg,Off,Off,,-41.5,,0.1,Pass,,-43.86,,,Pass,,2.36,,,53,No Error,Pass
+32.3.1,6G,802.11be ,2,MCS13,320MHz,320MHz,6105,31,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT320_1_S1_MCS13.iqvsg,Off,Off,,-41.5,,0.1,Pass,,,-43.00,,Pass,,,1.50,,53,No Error,Pass
+32.3.2,6G,802.11be ,2,MCS13,320MHz,320MHz,6425,95,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT320_1_S1_MCS13.iqvsg,Off,Off,,-41.5,,0.1,Pass,,,-43.00,,Pass,,,1.50,,53,No Error,Pass
+32.3.3,6G,802.11be ,2,MCS13,320MHz,320MHz,6745,159,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT320_1_S1_MCS13.iqvsg,Off,Off,,-41.5,,0,Pass,,,-43.35,,Pass,,,1.85,,53,No Error,Pass
+32.4.1,6G,802.11be ,3,MCS13,320MHz,320MHz,6105,31,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT320_1_S1_MCS13.iqvsg,Off,Off,,-41.5,,0,Pass,,,,-43.00,Pass,,,,1.50,53,No Error,Pass
+32.4.2,6G,802.11be ,3,MCS13,320MHz,320MHz,6425,95,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT320_1_S1_MCS13.iqvsg,Off,Off,,-41.5,,0,Pass,,,,-43.00,Pass,,,,1.50,53,No Error,Pass
+32.4.3,6G,802.11be ,3,MCS13,320MHz,320MHz,6745,159,N/A,N/A,N/A,N/A,1,Yes,No,WiFi_11BE_EHT320_1_S1_MCS13.iqvsg,Off,Off,,-41.5,,0,Pass,,,,-43.00,Pass,,,,1.50,53,No Error,Pass
+Rx Reciever DFS
+Test,Ant,Frequency,Channel,DUT Transmit Power,RSSI,RSSI Error,Temp,Pass/Fail
+33.1.1,4,5250,50,-65,,,,Pass
+33.1.2,4,5250,50,-60,,,,Pass
+33.1.3,4,5250,50,-55,,,,Pass
+33.1.4,4,5250,50,-50,,,,Pass
+33.1.5,4,5250,50,-45,,,,Pass
+33.1.6,4,5250,50,-40,,,,Pass
+33.2.1,4,5570,114,-65,,,,Pass
+33.2.2,4,5570,114,-60,,,,Pass
+33.2.3,4,5570,114,-55,,,,Pass
+33.2.4,4,5570,114,-50,,,,Pass
+33.2.5,4,5570,114,-45,,,,Pass
+33.2.6,4,5570,114,-40,,,,Pass

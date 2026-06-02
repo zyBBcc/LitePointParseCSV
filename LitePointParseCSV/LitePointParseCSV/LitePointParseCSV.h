@@ -6,57 +6,57 @@
 extern "C" {
 #endif
 
-	// 回调函数类型定义
-	typedef void(*ErrorCallback)(int lineNo, const char* msg, void* userData);
+    // error callback type
+    typedef void(*ErrorCallback)(int lineNo, const char* msg, void* userData);
 
-	// 输出项结构体 - C风格
-	typedef struct {
-		char segment[256];   // [TX^CAL^2G^11N^ANT0^20BW^2412FREQ^MCS7]
-		char key[128];       // ClockError / MeasurePower / EVM_-25dB ...
-		char status[16];     // PASS / FAIL / "" (info only)
-		double value;
-		char lower[32];      // 规格下限
-		char upper[32];      // 规格上限
-	} CalItem_C;
+    // calibration item - C struct
+    typedef struct {
+        char segment[256];   // [TX^CAL^2G^11N^ANT0^20BW^2412FREQ^MCS7]
+        char key[128];       // ClockError / MeasurePower / EVM_-25dB ...
+        char status[16];     // PASS / FAIL / "" (info only)
+        double value;
+        char lower[32];      // lower limit
+        char upper[32];      // upper limit
+    } CalItem_C;
 
-	
 
-	/* ---------- 核心解析接口 ---------- */
-	int __stdcall ParseLitePointCsv(
-		const char* filePath,
-		CalItem_C** items,          // 输出：动态分配的数组
-		int* itemCount,            // 输出：数组大小
-		ErrorCallback onError,     // 错误回调
-		void* userData             // 回调用户数据
-	);
 
-	/* ---------- 工具函数 ---------- */
-	void __stdcall FreeParseResult(CalItem_C* items);
+    /* ---------- core parse interface ---------- */
+    int __stdcall ParseLitePointCsv(
+        const char* filePath,
+        CalItem_C** items,          // output array, dynamically allocated
+        int* itemCount,             // output array size
+        ErrorCallback onError,      // error callback
+        void* userData              // callback user data
+    );
 
-	/* ---------- 线损计算 ---------- */
-	int __stdcall CalculatePathLoss(
-		const char* powerTagCsv,    // 金版文件路径
-		const char* measPowerCsv,   // 实测功率文件路径
-		const char* outLossCsv,     // 输出线损文件路径
-		ErrorCallback onError,      // 错误回调
-		void* userData              // 回调用户数据
-	);
+    /* ---------- free result ---------- */
+    void __stdcall FreeParseResult(CalItem_C* items);
 
-	/* ---------- 从测试CSV中提取测量功率 ---------- */
-	int __stdcall ExtractMeasPowerFromCsv(
-		const char* testCsvPath,    // 测试CSV文件路径
-		const char* outCsvPath,     // 输出功率CSV路径
-		ErrorCallback onError,      // 错误回调
-		void* userData              // 回调用户数据
-	);
+    /* ---------- path loss calculation ---------- */
+    int __stdcall CalculatePathLoss(
+        const char* powerTagCsv,    // tag power file path
+        const char* measPowerCsv,   // measured power file path
+        const char* outLossCsv,     // output loss file path
+        ErrorCallback onError,      // error callback
+        void* userData              // callback user data
+    );
 
-	/* ---------- 多文件功率平均值计算 ---------- */
-	int __stdcall CalcAvgPowerFromSet(
-		const char* const* filePathSet,   // CSV 文件路径数组（以 nullptr 结尾）
-		const char* outAvgCsvPath,       // 输出平均值 CSV 路径
-		ErrorCallback onError,            // 错误回调
-		void* userData            // 回调用户数据
-	);
+    /* ---------- extract Tx Power + Rx DFS RSSI ---------- */
+    int __stdcall ExtractMeasPowerFromCsv(
+        const char* testCsvPath,    // test CSV file path
+        const char* outCsvPath,     // output CSV path
+        ErrorCallback onError,      // error callback
+        void* userData              // callback user data
+    );
+
+    /* ---------- multi-file avg power ---------- */
+    int __stdcall CalcAvgPowerFromSet(
+        const char* const* filePathSet,   // CSV file path array (nullptr terminated)
+        const char* outAvgCsvPath,        // output average CSV path
+        ErrorCallback onError,            // error callback
+        void* userData                    // callback user data
+    );
 
 #ifdef __cplusplus
 }
