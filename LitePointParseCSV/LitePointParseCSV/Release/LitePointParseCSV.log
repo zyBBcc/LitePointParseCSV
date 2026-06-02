@@ -1,0 +1,46 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(438,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+  LitePointParseCSV.cpp
+  class template optional is only available with C++17 or later.
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(781,40): warning C4244: “return”: 从“int64_t”转换到“size_t”，可能丢失数据
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(804,59): warning C4244: “参数”: 从“const int64_t”转换到“size_t”，可能丢失数据
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(817,72): warning C4244: “参数”: 从“const int64_t”转换到“SIZE_T”，可能丢失数据
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(1972,5): warning C4984: "if constexpr" 是一种 C++17 语言扩展
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(1992): message : 查看对正在编译的 类 模板 实例化“csv2::Writer<delimiter,Stream>”的引用
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV.cpp(400,20): warning C4018: “<”: 有符号/无符号不匹配
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV.cpp(457,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV.cpp(467,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(961,18): warning C4244: “=”: 从“const int64_t”转换到“mio::basic_mmap<mio::access_mode::read,char>::size_type”，可能丢失数据
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(932): message : 在编译 类 模板 成员函数“void mio::basic_mmap<mio::access_mode::read,char>::map(const mio::basic_mmap<mio::access_mode::read,char>::handle_type,const mio::basic_mmap<mio::access_mode::read,char>::size_type,const mio::basic_mmap<mio::access_mode::read,char>::size_type,std::error_code &)”时
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(923): message : 查看对正在编译的函数 模板 实例化“void mio::basic_mmap<mio::access_mode::read,char>::map(const mio::basic_mmap<mio::access_mode::read,char>::handle_type,const mio::basic_mmap<mio::access_mode::read,char>::size_type,const mio::basic_mmap<mio::access_mode::read,char>::size_type,std::error_code &)”的引用
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(190): message : 查看对正在编译的函数 模板 实例化“void mio::basic_mmap<mio::access_mode::read,char>::map<String>(const String &,const mio::basic_mmap<mio::access_mode::read,char>::size_type,const mio::basic_mmap<mio::access_mode::read,char>::size_type,std::error_code &)”的引用
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(190): message :         with
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(190): message :         [
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(190): message :             String=std::string
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(190): message :         ]
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(190): message : 查看对正在编译的函数 模板 实例化“void mio::basic_mmap<mio::access_mode::read,char>::map<String>(const String &,const mio::basic_mmap<mio::access_mode::read,char>::size_type,const mio::basic_mmap<mio::access_mode::read,char>::size_type,std::error_code &)”的引用
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(190): message :         with
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(190): message :         [
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(190): message :             String=std::string
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(190): message :         ]
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(1664): message : 查看对正在编译的函数 模板 实例化“mio::basic_mmap<mio::access_mode::read,char>::basic_mmap<std::string>(const String &,const mio::basic_mmap<mio::access_mode::read,char>::size_type,const mio::basic_mmap<mio::access_mode::read,char>::size_type)”的引用
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(1664): message :         with
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(1664): message :         [
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(1664): message :             String=std::string
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(1664): message :         ]
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(1664): message : 查看对正在编译的函数 模板 实例化“mio::basic_mmap<mio::access_mode::read,char>::basic_mmap<std::string>(const String &,const mio::basic_mmap<mio::access_mode::read,char>::size_type,const mio::basic_mmap<mio::access_mode::read,char>::size_type)”的引用
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(1664): message :         with
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(1664): message :         [
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(1664): message :             String=std::string
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(1664): message :         ]
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV.cpp(564): message : 查看对正在编译的函数 模板 实例化“bool csv2::Reader<csv2::delimiter<44>,csv2::quote_character<34>,csv2::first_row_is_header<false>,csv2::trim_policy::trim_whitespace>::mmap<const std::string&>(StringType)”的引用
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV.cpp(564): message :         with
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV.cpp(564): message :         [
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV.cpp(564): message :             StringType=const std::string &
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV.cpp(564): message :         ]
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV.cpp(564): message : 查看对正在编译的函数 模板 实例化“bool csv2::Reader<csv2::delimiter<44>,csv2::quote_character<34>,csv2::first_row_is_header<false>,csv2::trim_policy::trim_whitespace>::mmap<const std::string&>(StringType)”的引用
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV.cpp(564): message :         with
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV.cpp(564): message :         [
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV.cpp(564): message :             StringType=const std::string &
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV.cpp(564): message :         ]
+D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\LitePointParseCSV\csv2\csv2.hpp(962,25): warning C4244: “=”: 从“const int64_t”转换到“mio::basic_mmap<mio::access_mode::read,char>::size_type”，可能丢失数据
+  LitePointParseCSV.vcxproj -> D:\TN_Project\B521\CODE\LitePointParseCSV\LitePointParseCSV\bulid\Release\LitePointParseCSV.lib
